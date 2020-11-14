@@ -8,39 +8,39 @@
   <body class="page__body">
 
     <header class="page-header">
-      <a href="index.html" class="header__logo">
-        <img src="https://via.placeholder.com/150x150" alt="Логотип магазина Мишка" width="150" height="150" class="header__logo-img">
-      </a>
-      <nav class="header-navigation">
-        <button class="header-navigation__toggle"><span class="visually-hidden">Открыть меню</span></button>
-        <ul class="header-navigation__list">
-          <li class="header-navigation__item">
-            <a href="catalog.html">Каталог товаров</a>
-          </li>
-          <li class="header-navigation__item">
-            <a href="form.html">Вязяание на заказ</a>
-          </li>
-          <li class="header-navigation__item">
-            <a href="">Поиск по сайту</a>
-          </li>
-          <li class="header-navigation__item">
-            <a href="">Корзина: пока пуста</a>
-          </li>
-        </ul>
-        <p class="header-navigation__delivery">Беспалтная доставка по России</p>
-      </nav>
+      <div class="header__wrapper">
+       <a class="header__logo" href="#">
+         <img src="https://via.placeholder.com/150x150" alt="Логотип магазина Мишка" width="150" height="150" class="header__logo-img">
+       </a>
+       <nav class="header-navigation">
+         <button class="header-navigation__toggle">
+           <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <ul class="header-navigation__list">
+           <li class="header-navigation__item">
+             <a href="catalog.html">Каталог товаров</a>
+           </li>
+           <li class="header-navigation__item">
+             <a href="form.html">Вязяание на заказ</a>
+           </li>
+           <li class="header-navigation__item">
+             <a href="#">Поиск по сайту</a>
+           </li>
+            <li class="header-navigation__item">
+             <a href="#">Корзина: пока пуста</a>
+           </li>
+         </ul>
+       </nav>
+       <p class="header-navigation__delivery">Беспалтная доставка по России</p>
+      </div>
     </header>
 
     <main class="page-main">
       <div class="main__wrapper">
         <h1 class="main__heading">Милые штучки ручной работы для дома</h1>
         <section class="main-assortiment">
-          <div class="main-assotiment__wrapper">
-            <p class="main-assotriment__offer">Предметы интерьера</p>
-          </div>
-          <div class="main-assotiment__wrapper">
-            <p class="main-assotriment__offer">Детские игрушки</p>
-          </div>
+            <p class="main-assotriment__offer main-assotriment__offer--interiror">Предметы интерьера</p>
+            <p class="main-assotriment__offer main-assotriment__offer--toys">Детские игрушки</p>
         </section>
 
         <section class="main-products">
@@ -51,21 +51,23 @@
             ручная работа. Доступны в шести</br>
             расцветках, и трех размерах.
           </p>
-          <article class="products-options">
-            <dt class="options__name">Цвет:</dt>
-            <dd class="optons__description">«Тиффани»/серый</dd>
-          </article>
-          <article class="products-options">
-            <dt class="options__name">Диаметр:</dt>
-            <dd class="optons__description">25 см</dd>
-          </article>
-          <article class="products-options">
-            <dt class="options__name">Высота:</dt>
-            <dd class="optons__description">15 см</dd>
-          </article>
+          <table class="products-options">
+            <tr>
+              <td>Цвет:</td>
+              <td>«Тиффани»/серый</td>
+            </tr>
+            <tr>
+              <td>Диаметр:</td>
+              <td>25 см</td>
+            </tr>
+            <tr>
+              <td>Высота:</td>
+              <td>15 см</td>
+            </tr>
+          </table>
           <img src="" alt="" class="main-products__img">
           <p class="main-products__price">Цена: 990 руб.</p>
-          <a href="" class="button">заказать</a>
+          <a href="#" class="button">заказать</a>
         </section>
 
         <section class="main-advantages">
@@ -93,25 +95,35 @@
         </section>
 
         <section class="main-reviews">
-          <h2 class="visuality-hidden">Отзывы о нашей продукции</h2>
-          <div class="reviews__text">
-            <dt>Отзывы</dt>
-            <dd>Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как
+          <ul class="reviews__list">
+            <li>
+              <h2>Отзывы</h2>
+            </li>
+            <li>Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как
               у популярных инстамамочек.
               В отчаянии, я накупила аксессуаров и игрушек в Мишке,
-              и мои фотографии сразу стали более стильными, а также набирают больше лайков!</dd>
-          </div>
-          <div class="reviews__user">
-            <dt>Анастасия Красильникова</dt>
-            <dd>@misssssiskras</dd>
-          </div>
-          <ul class="reviews__switch">
-            <li><a class="reviews__switch--before" href="#"><span>предыдущий отзыв</span></a>
+              и мои фотографии сразу стали более стильными, а также набирают больше лайков!
             </li>
-            <li><a class="reviews__switch--next" href="#"><span>следующий отзыв</span></a>
+            <li class="reviews__item--user">
+              Анастасия Красильникова
+            </li>
+            <li>
+              @misssssiskras
             </li>
           </ul>
-          <a href="" class="button">написать</a>
+          <ul class="reviews__switch">
+            <li>
+              <button class="reviews__switch--before" href="#">
+                <span>предыдущий отзыв</span>
+              </button>
+            </li>
+            <li>
+              <button class="reviews__switch--next" href="#">
+                <span>следующий отзыв</span>
+              </button>
+            </li>
+          </ul>
+          <a href="#" class="button">написать</a>
         </section>
 
         <section class="main-contacts">
@@ -130,7 +142,7 @@
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d499.6532974498015!2d30.322888749668103!3d59.938560471599615!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1605256873411!5m2!1sru!2sru" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
             </iframe>
           </div>
-          <button class="buttton">напишите нам</button>
+          <a href="#" class="buttton">напишите нам</a>
         </section>
       </div>
 
@@ -138,7 +150,7 @@
 
     <footer class="page-footer">
       <div class="page-footer__wraper">
-        <a class="footer__logo" href="index.html">
+        <a class="footer__logo" href="#">
           <img src="https://via.placeholder.com/150x150" alt="Логотип магазина Мишка" width="150" height="150" class="footer__logo-img">
         </a>
         <section class="page-footer__social">
