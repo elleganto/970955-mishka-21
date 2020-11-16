@@ -9,7 +9,7 @@
 
     <header class="page-header">
       <div class="header__wrapper">
-       <a class="header__logo" href="#">
+       <a class="header__logo">
          <img src="https://via.placeholder.com/150x150" alt="Логотип магазина Мишка" width="150" height="150" class="header__logo-img">
        </a>
        <nav class="header-navigation">
@@ -24,7 +24,7 @@
              <a href="form.html">Вязяание на заказ</a>
            </li>
            <li class="header-navigation__item">
-             <a href="#">Поиск по сайту</a>
+             <a>Поиск по сайту</a>
            </li>
             <li class="header-navigation__item">
              <a href="#">Корзина: пока пуста</a>
@@ -39,6 +39,7 @@
       <div class="main__wrapper">
         <h1 class="main__heading">Милые штучки ручной работы для дома</h1>
         <section class="main-assortiment">
+            <h2 class="visually-hidden">Ассотримент</h2>
             <p class="main-assotriment__offer main-assotriment__offer--interiror">Предметы интерьера</p>
             <p class="main-assotriment__offer main-assotriment__offer--toys">Детские игрушки</p>
         </section>
@@ -65,9 +66,9 @@
               <td>15 см</td>
             </tr>
           </table>
-          <img src="" alt="" class="main-products__img">
+          <img src="https://via.placeholder.com/150x150" alt="фото продукции" class="main-products__img" width="150" height="150">
           <p class="main-products__price">Цена: 990 руб.</p>
-          <a href="#" class="button">заказать</a>
+          <a class="button" href="#">заказать</a>
         </section>
 
         <section class="main-advantages">
@@ -95,30 +96,27 @@
         </section>
 
         <section class="main-reviews">
-          <ul class="reviews__list">
-            <li>
-              <h2>Отзывы</h2>
-            </li>
-            <li>Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как
+          <h2>Отзывы</h2>
+          <blockquote>Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как
               у популярных инстамамочек.
               В отчаянии, я накупила аксессуаров и игрушек в Мишке,
               и мои фотографии сразу стали более стильными, а также набирают больше лайков!
-            </li>
-            <li class="reviews__item--user">
+          </blockquote>
+          <b>
               Анастасия Красильникова
-            </li>
-            <li>
+          </b>
+          <p>
               @misssssiskras
-            </li>
-          </ul>
+          </p>
+
           <ul class="reviews__switch">
             <li>
-              <button class="reviews__switch--before" href="#">
+              <button class="reviews__switch--before">
                 <span>предыдущий отзыв</span>
               </button>
             </li>
             <li>
-              <button class="reviews__switch--next" href="#">
+              <button class="reviews__switch--next">
                 <span>следующий отзыв</span>
               </button>
             </li>
@@ -150,10 +148,11 @@
 
     <footer class="page-footer">
       <div class="page-footer__wraper">
-        <a class="footer__logo" href="#">
+        <a class="footer__logo">
           <img src="https://via.placeholder.com/150x150" alt="Логотип магазина Мишка" width="150" height="150" class="footer__logo-img">
         </a>
         <section class="page-footer__social">
+          <h2 class="visually-hidden">Мы в соцсетях</h2>
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
@@ -166,8 +165,8 @@
             </li>
           </ul>
         </section>
-        <section class="page-footer--copyright">
-          <b class="copyright__text">Разработано:</b>
+        <section class="page-footer__copyright">
+          <h2 class="copyright__text">Разработано:</h2>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
         </section>
       </div>
