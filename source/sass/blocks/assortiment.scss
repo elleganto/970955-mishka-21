@@ -1,0 +1,19 @@
+.assortiment {
+  display: flex;
+
+}
+
+.assortiment__offer {
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 24px;
+  padding: 24px 30px 31px 30px;
+  color: $main-background;
+
+  &--interior {
+    background-color: $excretion-light;
+  }
+  &--toys {
+    background-color: $excretion-darck;
+  }
+}
