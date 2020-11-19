@@ -1,0 +1,16 @@
+.contacts {
+  font-size: 14px;
+  line-height: 30px;
+  color: $text-color;
+}
+
+.contacts__heading {
+  font-size: 18px;
+  line-height: 30px;
+  color: $heading-color;
+}
+
+.contacts__email--link {
+  text-decoration: none;
+  color: inherit;
+}
