@@ -1,0 +1,19 @@
+.form {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 18px;
+  color: $heading-color;
+}
+
+.form__heading {
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $excretion-light;
+}
+
+input::placeholder {
+  font-size: 17px;
+  line-height: 18px;
+  color: $heading-color;
+  opacity: 0.3;
+}

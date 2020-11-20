@@ -14,99 +14,101 @@
         <img class="header__logo-img" src="https://via.placeholder.com/150x150" alt="Логотип магазина Мишка" width="150"
           height="150">
       </a>
-      <nav class="navigation">
+      <nav class="header-navigation">
         <button class="header-navigation__toggle"><span class="visually-hidden">Открыть меню</span>
         </button>
-        <ul class="navigation__list">
-          <li class="navigation__item">
+        <ul class="header-navigation__list">
+          <li class="header-navigation__item">
             <a href="catalog.html">Каталог товаров</a>
           </li>
-          <li class="navigation__item">
+          <li class="header-navigation__item">
             <a>Вязяание на заказ</a>
           </li>
-          <li class="navigation__item">
+          <li class="header-navigation__item">
             <a>Поиск по сайту</a>
           </li>
-          <li class="navigation__item">
+          <li class="header-navigation__item">
             <a href="#">Корзина: пока пуста</a>
           </li>
         </ul>
-        <p class="navigation__delivery">Беспалтная доставка по России</p>
+        <p class="header-navigation__delivery">Беспалтная доставка по России</p>
       </nav>
     </div>
   </header>
 
   <main class="page-main">
     <div class="main__wrapper">
-      <h1 class="main__heading">Вязание на заказ</h1>
+      <div class="main__heading--wrap-form">
+        <h1 class="main__heading">Вязание на заказ</h1>
+      </div>
       <p class="main__description">
         Мы будем рады воплотить в жизнь ваши пожелания!
         Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
       </p>
-      <form class="main-form" action="https://echo.htmlacademy.ru" method="GET">
-        <fieldset class="form-type">
+      <form class="form" action="https://echo.htmlacademy.ru" method="GET">
+        <fieldset class="form__type">
           <legend class="form__heading">
             тип
           </legend>
-          <label class="form-type__radio" for="accessories">
+          <label class="form__type--radio" for="accessories">
             <input type="radio" name="accessories" id="accessories" checked>
             Аксессуар для интерьера
           </label>
-          <label class="form-type__radio" for="toys">
+          <label class="form__type--radio" for="toys">
             <input type="radio" name="toys" id="toys">
             Детская игрушка
           </label>
         </fieldset>
 
-        <fieldset class="form-colors">
+        <fieldset class="form__colors">
           <legend class="form__heading">
             цвет
           </legend>
-          <labe class="form-colors__checkbox" for="white">
+          <labe class="form__colors--checkbox" for="white">
             <input type="checkbox" name="white" id="white" checked>
             Белый
           </labe>
-          <labe class="form-colors__checkbox" for="grey">
+          <labe class="form__colors--checkbox" for="grey">
             <input type="checkbox" name="grey" id="grey" checked>
             Серый
           </labe>
-          <labe class="form-colors__checkbox" for="tiffani">
+          <labe class="form__colors--checkbox" for="tiffani">
             <input type="checkbox" name="tiffani" id="tiffani">
             «Тиффани»
           </labe>
-          <labe class="form-colors__checkbox" for="black">
+          <labe class="form__colors--checkbox" for="black">
             <input type="checkbox" name="black" id="black">
             Черный
           </labe>
-          <labe class="form-colors__checkbox" for="pink">
+          <labe class="form__colors--checkbox" for="pink">
             <input type="checkbox" name="pink" id="pink">
             Розовый
           </labe>
-          <labe class="form-colors__checkbox" for="orange">
+          <labe class="form__colors--checkbox" for="orange">
             <input type="checkbox" name="orange" id="orange">
             Оранжевый
           </labe>
         </fieldset>
 
-        <fieldset class="form-registration">
+        <fieldset class="registration">
           <div class="form-registration__client">
             <legend class="form__heading">
               фио
             </legend>
-            <label class="form-registration__heading" for="name">
+            <label class="registration__heading" for="name">
               Имя:
               <input type="text" name="name" id="name" placeholder="Введите ваше имя*">
             </label>
-            <label class="form-registration__heading" for="surname">
+            <label class="registration__heading" for="surname">
               Фамилия:
               <input type="text" name="surname" id="surname" placeholder="Укажите фамилию*">
             </label>
-            <label class="form-registration__heading" for="celebrated">
+            <label class="registration__heading" for="celebrated">
               Отчество:
               <input type="text" name="celebrated" id="celebrated" placeholder="Отчество, если желаете">
             </label>
           </div>
-          <div class="form-registtration__adress">
+          <div class="registtration__adress">
             <label class="form__heading" for="telephone">
               тел
               <input type="tel" name="telephone" id="telephone" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
@@ -116,14 +118,14 @@
               <input type="email" name="e-mail" id="e-mail" placeholder="Ваш Email*">
             </label>
           </div>
-          <div class="form-registration__wishes">
+          <div class="registration__wishes">
             <label class="form__heading" for="description">
               доп
             </label>
-            <textarea class="form-registration__text" name="description" id="description" cols="30" rows="10">
+            <textarea class="registration__wishes--text" name="description" id="description" cols="30" rows="10">
               Опишите все ваши пожелания к заказу
             </textarea>
-            <small class="form-registration__note">*Поля обязательны для заполнения</small>
+            <small class="registration__wishes--note">*Поля обязательны для заполнения</small>
             <button class="button form__button" type="submit">
               отправить заказ
             </button>
@@ -143,20 +145,29 @@
         <h2 class="visually-hidden">Мы в соцсетях</h2>
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+              Мы в Вконтакте
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
+              Мы в Фейсбуке
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в
-              Инстаграме</a>
+            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">
+              Мы в Инстаграме
+            </a>
           </li>
         </ul>
       </section>
       <section class="footer__copyright">
         <h2 class="copyright__text">Разработано:</h2>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
+            <path fill="#2E368F" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/>
+          </svg>
+        </a>
       </section>
     </div>
   </footer>
