@@ -1,0 +1,15 @@
+.registration__wishes {
+
+  &--text {
+  font-size: 17px;
+  line-height: 18px;
+  color: $heading-color;
+  opacity: 0.3;
+  }
+
+  &--note {
+  font-size: 14px;
+  line-height: 16px;
+  color: $text-color;
+  }
+}

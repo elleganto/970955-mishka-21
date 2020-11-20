@@ -6,14 +6,25 @@
 
 // Blocks
 
-@import "blocks/page-header.scss";
-@import "blocks/header-navigation.scss";
-@import "blocks/page-main.scss";
-@import "blocks/assortiment.scss";
-@import "blocks/products.scss";
-@import "blocks/advantages.scss";
-@import "blocks/reviews.scss";
-@import "blocks/contacts.scss";
-@import "blocks/page-footer.scss";
-@import "blocks/social.scss";
-@import "blocks/copyright.scss";
+// United
+
+@import "blocks/united/page-header.scss";
+@import "blocks/united/header-navigation.scss";
+@import "blocks/united/page-footer.scss";
+@import "blocks/united/social.scss";
+@import "blocks/united/copyright.scss";
+
+// Index.html
+
+@import "blocks/index.html/page-main.scss";
+@import "blocks/index.html/assortiment.scss";
+@import "blocks/index.html/products.scss";
+@import "blocks/index.html/advantages.scss";
+@import "blocks/index.html/reviews.scss";
+@import "blocks/index.html/contacts.scss";
+
+// Form.html
+
+@import "blocks/form.html/page-main.scss";
+@import "blocks/form.html/form.scss";
+@import "blocks/form.html/registration.scss";
