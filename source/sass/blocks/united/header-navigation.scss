@@ -4,13 +4,35 @@
 }
 
 .header-navigation__list {
+  margin: 0;
+  padding: 0;
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+
 }
 
-.header-navigation__item a {
+.header-navigation__item {
+  width: 100%;
+  height: 79px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow: 0px 1px 0px #ECECEC, inset 0px 1px 0px #ECECEC;
+
+
+  a {
     font-weight: bold;
     font-size: 17px;
     line-height: 24px;
     text-decoration: none;
     color: $heading-color;
+  }
+}
+
+.header-navigation__delivery {
+  display: none;
 }

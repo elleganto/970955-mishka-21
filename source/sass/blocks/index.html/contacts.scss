@@ -1,7 +1,14 @@
 .contacts {
+  width: 260px;
+  margin: 0 auto;
+
   font-size: 14px;
   line-height: 30px;
   color: $text-color;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
 }
 
 .contacts__heading {
@@ -10,7 +17,19 @@
   color: $heading-color;
 }
 
+.contacts__data {
+  margin: 0;
+
+  p {
+    display: inline-block;
+  }
+}
+
 .contacts__email--link {
   text-decoration: none;
   color: inherit;
+}
+
+.contacts__adress {
+  text-transform: uppercase;
 }

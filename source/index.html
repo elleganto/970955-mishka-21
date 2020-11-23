@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Мишка</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -10,10 +11,10 @@
 <body class="page__body">
 
   <header class="page-header">
-    <div class="header__wrapper">
+    <div class="header__wrapper container">
       <a class="header__logo">
-        <img src="https://via.placeholder.com/150x150" alt="Логотип магазина Мишка" width="150" height="150"
-          class="header__logo-img">
+        <img src="img/mishka-logo-mobile.svg.svg" alt="Логотип магазина Мишка" width="86" height="35"
+        class="header__logo-img">
       </a>
       <nav class="header-navigation">
         <button class="header-navigation__toggle">
@@ -39,11 +40,11 @@
   </header>
 
   <main class="page-main">
-    <div class="main__wrapper">
-      <div class="main__heading--wrap-index">
-        <h1 class="main__heading">Милые штучки ручной работы для дома</h1>
-      </div>
-        <section class="assortiment">
+    <div class="main__heading--wrap-index">
+        <h1 class="main__heading">Милые штуки ручной работы для дома</h1>
+    </div>
+    <div class="main__wrapper container">
+      <section class="assortiment">
         <h2 class="visually-hidden">Ассотримент</h2>
         <p class="assortiment__offer assortiment__offer--interior">Предметы интерьера</p>
         <p class="assortiment__offer assortiment__offer--toys">Детские игрушки</p>
@@ -74,29 +75,29 @@
         <img class="products__img" src="https://via.placeholder.com/150x150" alt="фото продукции" width="150"
           height="150">
         <p class="products__price">Цена: 990 руб.</p>
-        <a class="button" href="#">заказать</a>
+        <a class="products__button button " href="#">заказать</a>
       </section>
 
       <section class="advantages">
-        <h2 class="advantages__heading">Кортко о нас:</h2>
+        <h2 class="advantages__heading">Коротко о нас:</h2>
         <ul class="advantages__list">
-          <li class="advatages__item--ecologi">
-            Экологически чистые материалы
+          <li class="advantages__item advantages__item--ecologi">
+            Экологически чистые<br> материалы
           </li>
-          <li class="advanatages__item--price">
-            Скандинавский стиль по российской цене
+          <li class="advantages__item advantages__item--price">
+            Скандинавский стиль<br> по российской цене
           </li>
-          <li class="advantages__item--like">
-            Увеличивает лайки на фотографиях
+          <li class="advantages__item advantages__item--like">
+            Увеличивает лайки<br> на фотографиях
           </li>
-          <li class="advanatages__itme--handmade">
-            Связано вручную с любовью и умилением
+          <li class="advantages__item advantages__itme--handmade">
+            Связано вручную<br> с любовью и умилением
           </li>
-          <li class="advantagers__item--support">
-            Поддержка отечественного производителя
+          <li class="advantages__item advantages__item--support">
+            Поддержка отечественного<br> производителя
           </li>
-          <li class="advanatages__item--delivery">
-            Поставляется в подарочной упаковке
+          <li class="advantages__item advanatages__item--delivery">
+            Поставляется<br> в подарочной упаковке
           </li>
         </ul>
       </section>
@@ -109,12 +110,10 @@
           В отчаянии, я накупила аксессуаров и игрушек в Мишке,
           и мои фотографии сразу стали более стильными, а также набирают больше лайков!
         </blockquote>
-        <b class="reviews__client reviews__client--name">
-          Анастасия Красильникова
-        </b>
-        <p class="reviews__client reviews__client--adress">
-          @misssssiskras
-        </p>
+        <div class="reviews__client">
+          <b>Анастасия Красильникова</b>
+          <p>@misssssiskras</p>
+      </div>
 
         <ul class="reviews__switch">
           <li>
@@ -128,20 +127,19 @@
             </button>
           </li>
         </ul>
-        <a href="#" class="button">написать</a>
+        <a href="#" class="reviews__button button">написать</a>
       </section>
 
       <section class="contacts">
         <h2 class="contacts__heading">Контакты</h2>
-        <div class="contacts__email">
-          <p>e-mail:</p>
+        <div class="contacts__data"></div>
+          <p class="contacts__email">e-mail:</p>
           <a class="contacts__email--link" href="info@mimimishkashop.ru">info@mimimishkashop.ru</a>
-        </div>
-        <div class="contacts__adress">
-          <p>адрес:</p>
+          <p class="contacts__adress">адрес:</p>
           <p>г. Санкт-Петербург</br>
             ул. Большая Конюшенная</br>
-            д. 19/8, офис 101</p>
+            д. 19/8, офис 101
+          </p>
         </div>
         <div class="contacts__map">
           <iframe
@@ -150,13 +148,13 @@
             tabindex="0">
           </iframe>
         </div>
-        <a href="#" class="buttton">напишите нам</a>
+        <a href="#" class="button">напишите нам</a>
       </section>
     </div>
   </main>
 
   <footer class="page-footer">
-    <div class="footer__wraper">
+    <div class="footer__wraper container">
       <a class="footer__logo">
         <img class="footer__logo-img" src="https://via.placeholder.com/150x150" alt="Логотип магазина Мишка" width="150"
           height="150">
