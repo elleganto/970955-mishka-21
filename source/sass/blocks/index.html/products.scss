@@ -2,12 +2,30 @@
   font-size: 15px;
   line-height: 24px;
   color: $text-color;
+
+  width: 260px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: auto 1fr 1fr;
+  }
 }
 
 .products__heading {
   font-size: 25px;
   line-height: 30px;
   color: $heading-color;
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2/3;
+  }
 }
 
 .products__offer {
@@ -15,15 +33,42 @@
   line-height: 20px;
   color: $excretion-light;
   text-transform: uppercase;
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
 }
 
 .products__description {
   width: 260px;
   height: 72px;
+  grid-column: 1/2;
+  grid-row: 2/3;
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2/3;
+  }
 }
 
 .products__options {
   line-height: 20px;
+  grid-column: 1/2;
+  grid-row: 3/4;
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2/3;
+  }
+}
+
+.products__img {
+  grid-column: 2/3;
+  grid-row: 2/6;
+
+  @media (min-width: $desktop-width) {
+    grid-column: 3/4;
+    grid-row: 1/6;
+  }
 }
 
 .products__price {
@@ -31,4 +76,22 @@
   font-size: 17px;
   line-height: 24px;
   color: $heading-color;
+  text-align: center;
+  grid-column: 1/2;
+  grid-row: 4/5;
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2/3;
+  }
 }
+
+.products__button {
+  grid-column: 1/2;
+  grid-row: 5/6;
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2/3;
+    grid-row: 5/6;
+  }
+}
+

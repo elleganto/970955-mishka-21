@@ -1,15 +1,28 @@
+.page-main {
+  width: 100%;
+}
+
 .main__heading {
   font-size: 27px;
   line-height: 30px;
   color: $heading-color;
-
   margin: auto;
+
 }
 
 .main__heading--wrap-index {
-  width: 320px;
-  height: 178px;
+  min-width: 320px;
+  height: 285px;
+
+  background-image: url("../img/mobile__logo.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
   background-color: $footer-color;
 
   display: flex;
+
+  @media (min-width: $tablet-width) {
+    height:750px;
+  }
 }
+

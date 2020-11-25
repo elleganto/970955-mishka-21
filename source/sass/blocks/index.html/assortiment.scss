@@ -1,9 +1,17 @@
 .assortiment {
   display: flex;
+  flex-wrap: wrap;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 
 }
 
 .assortiment__offer {
+  width: 100%;
+  margin: 0;
   font-weight: bold;
   font-size: 19px;
   line-height: 24px;
@@ -15,5 +23,9 @@
   }
   &--toys {
     background-color: $excretion-darck;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: auto;
   }
 }

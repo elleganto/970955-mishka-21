@@ -1,16 +1,55 @@
 .contacts {
+  width: 260px;
+  margin: 0 auto;
+
   font-size: 14px;
   line-height: 30px;
   color: $text-color;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto auto auto;
+  }
 }
 
 .contacts__heading {
   font-size: 18px;
   line-height: 30px;
   color: $heading-color;
+  margin: 50px;
+}
+
+.contacts__data {
+  margin: 0;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: top;
+
+  p {
+    margin: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .contacts__email--link {
   text-decoration: none;
   color: inherit;
+}
+
+.contacts__map{
+  grid-column: 2/3;
+  grid-row: 1/4;
 }
