@@ -8,6 +8,7 @@
 .page__body {
   min-height: 100%;
   margin: 0;
+  padding: 0;
   background-color: $main-background;
   color: $heading-color;
 }
@@ -47,6 +48,8 @@ img {
 }
 
 .container {
+  min-width: 260px;
+  padding: 0 30px;
 
   @media (min-width: $tablet-width) {
     min-width: 668px;

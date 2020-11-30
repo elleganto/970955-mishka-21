@@ -1,3 +1,30 @@
+.registration__client {
+  @extend %form-compilation;
+
+  input {
+    display: block;
+  }
+
+  @media (min-width: $tablet-width) {
+    input {
+      display: inline-block;
+    }
+  }
+}
+
+.registration__adress {
+  @extend %form-compilation;
+
+  input {
+    display: block;
+  }
+
+  @media (min-width: $tablet-width) {
+    input {
+      display: inline-block;
+    }
+}
+
 .registration__wishes {
 
   &--text {

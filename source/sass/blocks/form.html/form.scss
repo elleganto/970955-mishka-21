@@ -17,3 +17,34 @@ input::placeholder {
   color: $heading-color;
   opacity: 0.3;
 }
+
+.form__type {
+  @extend %form-compilation;
+
+
+}
+
+.form__colors {
+  @extend %form-compilation;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    &--checkbox:nth-of-type(odd) {
+      grid-column: 1/2;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+
+    &--checkbox:nth-of-type(odd) {
+      grid-column: auto;
+    }
+    &--checkbox:nth-of-type(1) {
+      grid-column: 1/2;
+    }
+  }
+}
