@@ -11,7 +11,7 @@
 
 .assortiment__offer {
   width: 100%;
-  padding: 0;
+  position: relative;
   margin: 0;
   font-weight: bold;
   font-size: 19px;
@@ -23,8 +23,22 @@
     background-color: $excretion-light;
   }
 
+  &--interior::after {
+    content: url("../../../img/interior-img.svg");
+    position: absolute;
+    top: 23px;
+    right: 52px;
+  }
+
   &--toys {
     background-color: $excretion-darck;
+  }
+
+  &--toys::after {
+    content: url("../../../img/toy-img.svg");
+    position: absolute;
+    top: 23px;
+    right: 42px;
   }
 
   @media (min-width: $tablet-width) {

@@ -3,9 +3,6 @@
   line-height: 24px;
   color: $text-color;
 
-  min-width: 260px;
-  padding: 0 30px;
-
   @media (min-width: $tablet-width) {
     width: 100%;
     display: grid;
