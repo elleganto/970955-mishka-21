@@ -43,6 +43,7 @@ input::placeholder {
     &--checkbox:nth-of-type(odd) {
       grid-column: auto;
     }
+
     &--checkbox:nth-of-type(1) {
       grid-column: 1/2;
     }

@@ -3,6 +3,12 @@
   color: inherit;
 }
 
+.header-navigation__toggle {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
 .header-navigation__list {
   margin: 0;
   padding: 0;
