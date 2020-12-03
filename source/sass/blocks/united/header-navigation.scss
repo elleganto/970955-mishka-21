@@ -2,6 +2,11 @@
   background-color: $main-background;
   color: inherit;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    height: 90px;
+  }
 }
 
 .header-navigation__toggle {
@@ -35,6 +40,7 @@
 }
 
 .main-nav--opened .header-navigation__toggle {
+
   &::before,
   &::after {
     content: "";
@@ -74,9 +80,14 @@
   align-items: start;
 
   @media (min-width: $tablet-width) {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(2, 1fr);
   }
 
+  @media (min-width: $desktop-width) {
+    grid-template-columns: auto auto 1fr min-content auto;
+  }
 }
 
 .header-navigation__item {
@@ -85,6 +96,39 @@
   display: flex;
   align-items: center;
   box-shadow: 0px 1px 0px #ECECEC, inset 0px 1px 0px #ECECEC;
+
+  @media (min-width: $tablet-width) {
+    box-shadow: none;
+
+    &:nth-of-type(1),
+    &:nth-of-type(2) {
+      grid-row: 2/3;
+    }
+
+    &:nth-of-type(3) {
+      grid-column: 3/4;
+
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+
+    &:nth-of-type(1),
+    &:nth-of-type(2) {
+      grid-row: 1/2;
+    }
+
+    &:nth-of-type(3) {
+      grid-column: 4/5;
+      padding-right: 52px;
+    }
+
+    &:nth-of-type(4) {
+      padding-right: 52px;
+    }
+
+
+  }
 }
 
 .header-navigation__item--link {
@@ -108,6 +152,10 @@
   &:active {
     opacity: 0.3;
   }
+
+  @media (min-width: $tablet-width) {
+    margin-left: 48px;
+  }
 }
 
 .header-navigation__item--icon {
@@ -118,6 +166,36 @@
   height: 18px;
 }
 
+@media (min-width: $tablet-width) {
+  .header-navigation__item--invisible {
+    width: 85px;
+    height: 90px;
+    border-right: 1px solid fade-out($heading-color, .9);
+    border-left: 1px solid fade-out($heading-color, .9);
+
+    span {
+      position: absolute;
+      opacity: 0;
+    }
+  }
+}
+
+.header-navigation__item--decktop {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+}
+
 .header-navigation__delivery {
   display: none;
+  color: $text-color;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    position: absolute;
+    bottom: -67px;
+    right: 20px;
+  }
 }

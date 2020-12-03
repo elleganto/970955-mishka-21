@@ -2,9 +2,20 @@
   font-size: 14px;
   line-height: 30px;
   color: $text-color;
+  position: relative;
+
+  &::before {
+    content: url("../img/zigzag-line.svg");
+    width: 100%;
+    height: 6px;
+  }
 
   .button {
     margin: 0 auto;
+
+    @media (min-width: $desktop-width) {
+      grid-column: 1/2;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -13,8 +24,14 @@
 
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: 1fr auto;
     grid-template-rows: auto auto auto;
+
+   min-width: 988px;
+
+   .container {
+     min-width: 50%;
+   }
   }
 }
 
@@ -22,15 +39,15 @@
   font-size: 18px;
   line-height: 30px;
   color: $heading-color;
-  margin: 50px;
+  margin-top: 30px;
+  margin-bottom: 27px;
 }
 
 .contacts__data {
   margin: 0;
 
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: top;
+  grid-template-columns: auto auto;
 
   p {
     margin: 0;
@@ -41,6 +58,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    width: 50%;
     grid-template-columns: 1fr 1fr;
   }
 }
@@ -50,7 +68,8 @@
   color: inherit;
 }
 
-.contacts__map {
-  grid-column: 2/3;
-  grid-row: 1/4;
+@media (min-width: $desktop-width) {
+  .contacts__map {
+    grid-column: 2/3;
+  }
 }

@@ -27,7 +27,7 @@
     content: url("../../../img/interior-img.svg");
     position: absolute;
     top: 23px;
-    right: 52px;
+    right: 36px;
   }
 
   &--toys {
@@ -37,8 +37,8 @@
   &--toys::after {
     content: url("../../../img/toy-img.svg");
     position: absolute;
-    top: 23px;
-    right: 42px;
+    top: 21px;
+    right: 27px;
   }
 
   @media (min-width: $tablet-width) {

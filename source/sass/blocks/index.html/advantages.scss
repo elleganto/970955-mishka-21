@@ -2,11 +2,14 @@
   font-weight: bold;
   font-size: 17px;
   line-height: 20px;
+  margin-bottom: 56px;
 }
 
 .advantages__heading {
   font-size: 25px;
   line-height: 30px;
+  margin-top: 25px;
+  margin-bottom: 28px;
 }
 
 .advantages__list {
@@ -23,4 +26,36 @@
 
 .advantages__item {
   margin-top: 10px;
+  margin-bottom: 25px;
+
+  svg {
+    display: block;
+
+  }
+
+  &--ecologi {
+    padding-left: 8px;
+    padding-bottom: 18px;
+  }
+
+  &--price {
+    padding-top: 3px;
+    padding-bottom: 27px;
+  }
+
+  &--like {
+    padding: 9px 0 22px 7px;
+  }
+
+  &--handmade {
+    padding: 6px 0 20px 3px;
+  }
+
+  &--support {
+    padding: 5px 0 27px 0;
+  }
+
+  &--delivery {
+    padding: 6px 0 21px 3px;
+  }
 }
