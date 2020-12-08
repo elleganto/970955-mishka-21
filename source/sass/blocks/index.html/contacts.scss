@@ -3,6 +3,7 @@
   line-height: 30px;
   color: $text-color;
   position: relative;
+  margin-bottom: 40px;
 
   &::before {
     content: url("../img/zigzag-line.svg");
@@ -13,13 +14,31 @@
   .button {
     margin: 0 auto;
 
+    @media (min-width: $tablet-width) {
+      font-size: 17px;
+      margin-top: 45px;
+      width: 230px;
+    }
+
     @media (min-width: $desktop-width) {
       grid-column: 1/2;
     }
   }
 
+  .container {
+    position: relative;
+
+    @media (min-width: $tablet-width) {}
+
+    @media (min-width: $desktop-width) {
+      min-width: 50%;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     width: 100%;
+    padding-top: 50px;
+    padding-bottom: 20px;
   }
 
   @media (min-width: $desktop-width) {
@@ -27,11 +46,7 @@
     grid-template-columns: 1fr auto;
     grid-template-rows: auto auto auto;
 
-   min-width: 988px;
-
-   .container {
-     min-width: 50%;
-   }
+    min-width: 988px;
   }
 }
 
@@ -41,6 +56,28 @@
   color: $heading-color;
   margin-top: 30px;
   margin-bottom: 27px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+    margin-top: 60px;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: -12%;
+      right: 7%;
+      width: 47px;
+      height: 81px;
+      background-image: url("../img/flag__icon.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
 
 .contacts__data {
@@ -49,12 +86,14 @@
   display: grid;
   grid-template-columns: auto auto;
 
-  p {
-    margin: 0;
+  div:nth-of-type(1) {
+    margin-right: 32px;
+    margin-bottom: 30px;
   }
 
   @media (min-width: $tablet-width) {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: max-content auto 70px auto;
+    padding-top: 24px;
   }
 
   @media (min-width: $desktop-width) {
@@ -63,13 +102,36 @@
   }
 }
 
-.contacts__email--link {
+.contacts__link {
+  padding-right: 0;
   text-decoration: none;
   color: inherit;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: $underline-color;
+    top: 26px;
+    right: 0;
+  }
 }
 
-@media (min-width: $desktop-width) {
-  .contacts__map {
+.contacts__map {
+  margin-top: 60px;
+  margin-bottom: 34px;
+
+  iframe {
+    width: 100%;
+  }
+
+  @media(min-width: $tablet-width) {
+    margin-top: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
     grid-column: 2/3;
   }
 }

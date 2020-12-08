@@ -1,17 +1,33 @@
 .footer__copyright {
   display: flex;
+  margin-bottom: 15px;
 }
 
 .copyright__heading {
   font-size: 19px;
   line-height: 18px;
+  padding-top: 14px;
+  padding-left: 39px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 45px;
+  }
 }
 
-.copyright__link svg {
-  width: 27px;
-  height: 35px;
+.copyright__link {
+  margin-top: 20px;
+  margin-left: 20px;
 
-  path {
-    fill: $excretion-light;
+  svg {
+    width: 45px;
+    height: 35px;
+
+    path {
+      fill: $excretion-light;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-left: 10px;
   }
 }

@@ -4,8 +4,13 @@
   position: relative;
 
   @media (min-width: $tablet-width) {
-    width: 100%;
+    min-width: 668px;
+    padding: 0 50px;
     height: 90px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 1050px;
   }
 }
 
@@ -81,12 +86,12 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: repeat(4, auto);
+    grid-template-columns: auto auto min-content auto;
     grid-template-rows: repeat(2, 1fr);
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: auto auto 1fr min-content auto;
+    grid-template-columns: 190px auto auto min-content max-content;
   }
 }
 
@@ -105,9 +110,21 @@
       grid-row: 2/3;
     }
 
+    &:nth-of-type(1) .header-navigation__item--link,
+    &:nth-of-type(2) .header-navigation__item--link {
+      font-size: 15px;
+      padding-bottom: 15px;
+    }
+
     &:nth-of-type(3) {
       grid-column: 3/4;
+      margin-right: 45px;
+      margin-left: -25px;
+    }
 
+    &:nth-of-type(4) {
+      justify-content: flex-end;
+      margin-top: 6px;
     }
   }
 
@@ -116,18 +133,33 @@
     &:nth-of-type(1),
     &:nth-of-type(2) {
       grid-row: 1/2;
+      padding-top: 15px;
     }
 
     &:nth-of-type(3) {
       grid-column: 4/5;
-      padding-right: 52px;
+      margin-right: 85px;
+      margin-left: 0;
     }
 
-    &:nth-of-type(4) {
-      padding-right: 52px;
+    &:nth-of-type(4) {}
+
+    &:nth-of-type(1) .header-navigation__item--link,
+    &:nth-of-type(2) .header-navigation__item--link {
+      font-size: 17px;
+      padding-bottom: 15px;
     }
 
+    &:nth-of-type(5) .header-navigation__item--link,
+    &:nth-of-type(6) .header-navigation__item--link {
+      font-size: 15px;
+      padding-bottom: 30px;
+    }
 
+    &:nth-of-type(2) .header-navigation__item--link,
+    &:nth-of-type(6) .header-navigation__item--link {
+      padding-left: 30px;
+    }
   }
 }
 
@@ -154,7 +186,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-left: 48px;
+    margin: 0;
   }
 }
 
@@ -164,6 +196,13 @@
   left: -50px;
   width: 20px;
   height: 18px;
+
+  @media (min-width: $tablet-width) {
+    &-search {
+      left: 33px;
+      top: -10px;
+    }
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -195,7 +234,7 @@
   @media (min-width: $tablet-width) {
     display: block;
     position: absolute;
-    bottom: -67px;
-    right: 20px;
+    bottom: -58px;
+    right: 50px;
   }
 }

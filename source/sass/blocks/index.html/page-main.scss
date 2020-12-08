@@ -6,9 +6,30 @@
   font-size: 27px;
   line-height: 30px;
   color: $heading-color;
-  margin-top: 73px;
-  margin-left: 36px;
+  margin: 0 auto;
+  margin-top: 70px;
   text-align: center;
+
+  &--wrap {
+    width: 100%;
+    display: flex;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+    margin-top: 150px;
+
+    br {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 70%;
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
 
 .main__heading--wrap-index {
@@ -23,7 +44,12 @@
   display: flex;
 
   @media (min-width: $tablet-width) {
-    height: 750px;
-    border-top: 1px solid fade-out($heading-color,.9);
+    min-width: 768px;
+    height: 624px;
+    border-top: 1px solid fade-out($heading-color, .9);
   }
 }
+
+// .main__heading--wrap {
+//   margin: auto;
+// }
