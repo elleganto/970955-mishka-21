@@ -156,12 +156,13 @@
     font-size: 20px;
     line-height: 24px;
     margin-top: 55px;
+    margin-right: 120px;
+    padding-right: 120px;
   }
 
   @media (min-width: $desktop-width) {
     grid-column: 2/3;
     padding-top: 60px;
-    padding-right: 100px;
   }
 }
 
@@ -170,6 +171,13 @@
   grid-column: 1/2;
   grid-row: 5/6;
   margin-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    width: 292px;
+    margin-left: 0;
+    margin-top: 10px;
+    margin-bottom: 14px;
+  }
 
   @media (min-width: $desktop-width) {
     width: 292px;
