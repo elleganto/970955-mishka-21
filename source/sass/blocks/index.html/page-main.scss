@@ -6,21 +6,46 @@
   font-size: 27px;
   line-height: 30px;
   color: $heading-color;
-  margin: auto;
+  margin: 0 auto;
+  margin-top: 70px;
+  text-align: center;
+
+  &--wrap {
+    width: 100%;
+    display: flex;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+    margin-top: 150px;
+
+    br {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 70%;
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
 
 .main__heading--wrap-index {
   min-width: 320px;
-  height: 285px;
+  height: 283px;
 
   background-image: url("../img/mobile__logo.jpg");
-  background-position: center;
+  background-position: 50% -17px;
   background-repeat: no-repeat;
   background-color: $footer-color;
 
   display: flex;
 
   @media (min-width: $tablet-width) {
-    height: 750px;
+    min-width: 768px;
+    height: 624px;
+    border-top: 1px solid fade-out($heading-color, .9);
   }
 }

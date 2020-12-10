@@ -2,14 +2,26 @@
   font-weight: bold;
   font-size: 17px;
   line-height: 20px;
-
-  width: 260px;
-  margin: 0 auto;
+  margin-bottom: 30px;
 }
 
 .advantages__heading {
   font-size: 25px;
   line-height: 30px;
+  margin-top: 25px;
+  margin-bottom: 28px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+    padding-top: 40px;
+    padding-left: 175px;
+  }
 }
 
 .advantages__list {
@@ -20,10 +32,52 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    &--wrap-left {
+      padding-left: 175px;
+    }
   }
 }
 
 .advantages__item {
   margin-top: 10px;
+  margin-bottom: 25px;
+
+  svg {
+    display: block;
+  }
+
+  &--ecologi {
+    padding-left: 8px;
+    padding-bottom: 18px;
+  }
+
+  &--price {
+    padding-top: 3px;
+    padding-bottom: 27px;
+  }
+
+  &--like {
+    padding: 9px 0 22px 7px;
+  }
+
+  &--handmade {
+    padding: 6px 0 20px 3px;
+  }
+
+  &--support {
+    padding: 5px 0 27px 0;
+  }
+
+  &--delivery {
+    padding: 6px 0 21px 3px;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 22px;
+    margin-bottom: 55px;
+  }
 }

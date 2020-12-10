@@ -3,15 +3,16 @@
   flex-wrap: wrap;
 
   @media (min-width: $tablet-width) {
+    min-width: 668px;
+    padding: 0 50px;
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-
 }
 
 .assortiment__offer {
   width: 100%;
-  padding: 0;
+  position: relative;
   margin: 0;
   font-weight: bold;
   font-size: 19px;
@@ -23,11 +24,27 @@
     background-color: $excretion-light;
   }
 
+  &--interior::after {
+    content: url("../img/interior-img.svg");
+    position: absolute;
+    top: 23px;
+    right: 36px;
+  }
+
   &--toys {
     background-color: $excretion-darck;
   }
 
+  &--toys::after {
+    content: url("../img/toy-img.svg");
+    position: absolute;
+    top: 21px;
+    right: 27px;
+  }
+
   @media (min-width: $tablet-width) {
     width: auto;
+    font-size: 20px;
+    line-height: 30px;
   }
 }
