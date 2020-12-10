@@ -4,13 +4,8 @@
   position: relative;
 
   @media (min-width: $tablet-width) {
-    min-width: 668px;
-    padding: 0 50px;
+    width: 100%;
     height: 90px;
-  }
-
-  @media (min-width: $desktop-width) {
-    min-width: 1050px;
   }
 }
 
@@ -45,7 +40,6 @@
 }
 
 .main-nav--opened .header-navigation__toggle {
-
   &::before,
   &::after {
     content: "";
@@ -100,7 +94,7 @@
   height: 79px;
   display: flex;
   align-items: center;
-  box-shadow: 0px 1px 0px #ECECEC, inset 0px 1px 0px #ECECEC;
+  box-shadow: 0 1px 0 $main-background, inset 0 1px 0 $main-background;
 
   @media (min-width: $tablet-width) {
     box-shadow: none;
@@ -129,7 +123,6 @@
   }
 
   @media (min-width: $desktop-width) {
-
     &:nth-of-type(1),
     &:nth-of-type(2) {
       grid-row: 1/2;
@@ -141,8 +134,6 @@
       margin-right: 85px;
       margin-left: 0;
     }
-
-    &:nth-of-type(4) {}
 
     &:nth-of-type(1) .header-navigation__item--link,
     &:nth-of-type(2) .header-navigation__item--link {

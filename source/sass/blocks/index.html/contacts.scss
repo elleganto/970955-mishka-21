@@ -4,7 +4,6 @@
   color: $text-color;
   position: relative;
   margin-bottom: 40px;
-  position: relative;
 
   &::before {
     content: url("../img/zigzag-line.svg");
@@ -14,7 +13,6 @@
     @media (min-width: $desktop-width) {
       position: absolute;
     }
-
   }
 
   .button {
@@ -36,14 +34,13 @@
   .container {
     position: relative;
 
-    @media (min-width: $tablet-width) {}
-
     @media (min-width: $desktop-width) {
-      min-width: 50%;
+      min-width: auto;
       display: flex;
       flex-wrap: wrap;
       flex-direction: column;
-      align-items: flex-end;
+      align-items: flex-start;
+      padding-left: 225px;
       padding-right: 0;
 
       grid-column: 1/2;
@@ -81,7 +78,7 @@
     margin-top: 60px;
 
     &::after {
-      content: '';
+      content: "";
       position: absolute;
       top: -12%;
       right: 7%;
@@ -95,10 +92,11 @@
   @media (min-width: $desktop-width) {
     font-size: 53px;
     line-height: 57px;
-    padding-right: 80px;
+    margin-top: 70px;
+    margin-bottom: 40px;
 
     &::after {
-      top: 13%;
+      top: 17%;
       left: 20%;
     }
   }
@@ -138,11 +136,15 @@
   &::after {
     content: "";
     position: absolute;
-    width: 100%;
+    width: 170px;
     height: 1px;
     background-color: $underline-color;
     top: 26px;
-    right: 0;
+    left: 0;
+
+    @media (min-width: $tablet-width) {
+      width: 205px;
+    }
   }
 }
 
@@ -154,7 +156,7 @@
     width: 100%;
   }
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     margin-top: 50px;
   }
 

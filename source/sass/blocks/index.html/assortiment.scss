@@ -8,7 +8,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-
 }
 
 .assortiment__offer {
@@ -26,7 +25,7 @@
   }
 
   &--interior::after {
-    content: url("../../../img/interior-img.svg");
+    content: url("../img/interior-img.svg");
     position: absolute;
     top: 23px;
     right: 36px;
@@ -37,7 +36,7 @@
   }
 
   &--toys::after {
-    content: url("../../../img/toy-img.svg");
+    content: url("../img/toy-img.svg");
     position: absolute;
     top: 21px;
     right: 27px;
