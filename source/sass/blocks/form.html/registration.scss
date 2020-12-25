@@ -2,7 +2,10 @@
   @extend %form-compilation;
 
   input {
+    width: 98%;
     display: block;
+    box-shadow: inset 0px -2px 0px #000000;
+    border: none;
   }
 
   .form__heading {
@@ -11,18 +14,38 @@
 
   @media (min-width: $tablet-width) {
     input {
+      width: 70%;
       display: inline-block;
       margin-left: 20px;
+      padding-left: 20px;
+
+      &[name="name"] {
+        width: 80%;
+      }
     }
 
     .form__heading {
       position: absolute;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    input {
+      width: 63.5%;
+
+      &[name="name"] {
+        width: 69%;
+      }
+    }
+
+    .form__heading {
+      left: 110px;
+    }
+  }
 }
 
 .registration__client {
-  margin-bottom: 25px;
+  margin-bottom: 30px;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -35,9 +58,11 @@
   margin-top: 20px;
 
   input {
+
     margin-top: 15px;
-    margin-bottom: 16px;
+    margin-bottom: 19px;
     padding-bottom: 20px;
+
   }
 
   @media (min-width: $tablet-width) {
@@ -51,17 +76,67 @@
 }
 
 .registration__adress {
+  position: relative;
+
   .form__heading {
-    padding-top: 10px;
+    padding-top: 14px;
+    position: static;
 
     &:nth-of-type(2) input {
       margin-bottom: 15px;
+    }
+
+    &--telephone::after {
+      content: "";
+      position: absolute;
+      width: 62%;
+      height: 1px;
+      top: 8px;
+      left: 90px;
+      background-color: $underline-color;
+
+      @media (min-width: $tablet-width) {
+        display: none;
+      }
+    }
+
+    &--telephone::before {
+      content: url("../img/icon__phone.svg");
+      position: absolute;
+      width: 32px;
+      height: 21px;
+      top: 32px;
+      right: 31px;
+    }
+
+
+    &--e-mail::after {
+      content: "";
+      position: absolute;
+      width: 56%;
+      height: 1px;
+      top: 115px;
+      left: 108px;
+      background-color: $underline-color;
+
+      @media (min-width: $tablet-width) {
+        display: none;
+      }
+    }
+
+    &--e-mail::before {
+      content: url("../img/icon__mail.svg");
+      position: absolute;
+      width: 32px;
+      height: 21px;
+      bottom: 15px;
+      right: 34px;
     }
   }
 
   input {
     margin-top: 15px;
-    margin-bottom: 28px;
+    margin-bottom: 34px;
     padding-bottom: 20px;
   }
 
@@ -80,10 +155,22 @@
       &:nth-of-type(2) input {
         margin-left: 105px;
       }
+
+      &--telephone::before {
+        top: 60px;
+        right: 68px;
+      }
+
+      &--e-mail::before {
+        bottom: 63px;
+        right: 71px;
+      }
     }
 
     input {
+      width: 71.6%;
       margin-left: 130px;
+      background-color: inherit;
     }
 
     label:nth-of-type(2) {
@@ -93,25 +180,41 @@
 
   @media (min-width: $desktop-width) {
     input {
-      margin-left: 140px;
+      width: 68.6%;
+      margin-left: 74px;
     }
 
-    .form__heading:nth-of-type(2) input {
-      margin-left: 115px;
+    .form__heading {
+      padding-left: 61px;
+
+      &:nth-of-type(2) input {
+        margin-left: 53px;
+      }
+
+      &--telephone::before {
+        top: 57px;
+        right: 226px;
+      }
+
+      &--e-mail::before {
+        bottom: 68px;
+        right: 228px;
+      }
     }
   }
 }
 
 .registration__wishes {
   &--text {
-    width: 255px;
-    height: 142px;
+    width: 241px;
+    height: 123px;
     margin-bottom: 10px;
+    padding-top: 21px;
+    padding-left: 16px;
     font-size: 17px;
     line-height: 18px;
     color: $heading-color;
     opacity: 0.3;
-    text-align: center;
   }
 
   &--note {
@@ -133,7 +236,8 @@
     flex-wrap: wrap;
 
     &--text {
-      width: 490px;
+      width: 478px;
+      font-size: 19px;
       margin-left: 170px;
       margin-bottom: 50px;
     }
@@ -150,9 +254,11 @@
 
   @media (min-width: $desktop-width) {
     &--text {
-      width: 694px;
+      width: 681px;
+      height: 117px;
+      padding-top: 15px;
       margin-left: 175px;
-      margin-bottom: 40px;
+      margin-bottom: 50px;
     }
 
     &--note {

@@ -76,64 +76,65 @@
       <h1 class="main__heading">Вязание на заказ</h1>
     </div>
     <div class="main__wrapper">
-      <p class="main__description">
+      <p class="main__description container">
         Мы будем рады воплотить в жизнь ваши пожелания!
         Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
       </p>
       <form class="form" action="https://echo.htmlacademy.ru" method="GET">
         <fieldset class="form__type container">
-          <legend class="form__heading">
+          <div class="form__heading form__heading--decorate">
             тип
-          </legend>
+            <div class="prom"><span class="prom__s"></span></div>
+          </div>
           <div class="form__type--wrap">
             <label class="form__type--radio" for="accessories">
-              <input type="radio" name="type" id="accessories" checked>
+              <input class="visually-hidden form__type--radio-input" type="radio" name="type" id="accessories" checked>
               Аксессуар для интерьера
             </label>
             <label class="form__type--radio" for="toys">
-              <input type="radio" name="type" id="toys">
+              <input class="visually-hidden form__type--radio-input" type="radio" name="type" id="toys">
               Детская игрушка
             </label>
           </div>
         </fieldset>
 
         <fieldset class="form__colors container">
-          <legend class="form__heading">
+          <div class="form__heading form__heading--decorate">
             цвет
-          </legend>
-        <div class="form__colors--wrap">
-          <label class="form__colors--checkbox" for="white">
-            <input type="checkbox" name="white" id="white" checked>
-            Белый
-          </label>
-          <label class="form__colors--checkbox" for="grey">
-            <input type="checkbox" name="grey" id="grey" checked>
-            Серый
-          </label>
-          <label class="form__colors--checkbox" for="tiffani">
-            <input type="checkbox" name="tiffani" id="tiffani">
-            «Тиффани»
-          </label>
-          <label class="form__colors--checkbox" for="black">
-            <input type="checkbox" name="black" id="black">
-            Черный
-          </label>
-          <label class="form__colors--checkbox" for="pink">
-            <input type="checkbox" name="pink" id="pink">
-            Розовый
-          </label>
-          <label class="form__colors--checkbox" for="orange">
-            <input type="checkbox" name="orange" id="orange">
-            Оранжевый
-          </label>
-        </div>
+          </div>
+          <div class="form__colors--wrap">
+            <label class="form__colors--checkbox" for="white">
+              <input class="visually-hidden" type="checkbox" name="white" id="white" checked>
+              Белый
+            </label>
+            <label class="form__colors--checkbox" for="grey">
+              <input class="visually-hidden" type="checkbox" name="grey" id="grey" checked>
+              Серый
+            </label>
+            <label class="form__colors--checkbox" for="tiffani">
+              <input class="visually-hidden" type="checkbox" name="tiffani" id="tiffani">
+              «Тиффани»
+            </label>
+            <label class="form__colors--checkbox" for="black">
+              <input class="visually-hidden" type="checkbox" name="black" id="black">
+              Черный
+            </label>
+            <label class="form__colors--checkbox" for="pink">
+              <input class="visually-hidden" type="checkbox" name="pink" id="pink">
+              Розовый
+            </label>
+            <label class="form__colors--checkbox" for="orange">
+              <input class="visually-hidden" type="checkbox" name="orange" id="orange">
+              Оранжевый
+            </label>
+          </div>
         </fieldset>
 
         <fieldset class="registration">
           <div class="registration__client container">
-            <legend class="form__heading">
+            <div class="form__heading form__heading--decorate">
               фио
-            </legend>
+            </div>
             <label class="registration__heading" for="name">
               Имя:
               <input type="text" name="name" id="name" placeholder="Введите ваше имя*">
@@ -148,21 +149,20 @@
             </label>
           </div>
           <div class="registration__adress container">
-            <label class="form__heading" for="telephone">
+            <label class="form__heading form__heading--telephone" for="telephone">
               тел
               <input type="tel" name="telephone" id="telephone" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
             </label>
-            <label class="form__heading" for="e-mail">
+            <label class="form__heading form__heading--e-mail" for="e-mail">
               e-mail
               <input type="email" name="e-mail" id="e-mail" placeholder="Ваш Email*">
             </label>
           </div>
           <div class="registration__wishes container">
-            <label class="form__heading" for="description">
+            <label class="form__heading form__heading--decorate" for="description">
               доп
             </label>
-            <textarea class="registration__wishes--text" name="description" id="description" cols="30" rows="10">
-              Опишите все ваши пожелания к заказу
+            <textarea class="registration__wishes--text" name="description" id="description" cols="30" rows="10">Опишите все ваши пожелания к заказу
             </textarea>
             <div class="registration__wishes--note">
               *Поля обязательны для заполнения

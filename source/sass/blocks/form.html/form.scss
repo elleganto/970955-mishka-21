@@ -6,7 +6,7 @@
   margin-bottom: 55px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 65px;
+    margin-top: 59px;
     margin-bottom: 48px;
     font-size: 19px;
     line-height: 18px;
@@ -14,6 +14,7 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 55px;
+    margin-top: 52px;
   }
 }
 
@@ -26,10 +27,10 @@
   padding-top: 18px;
   padding-bottom: 10px;
 
-  &::after {
+  &--decorate::after {
     content: "";
     position: absolute;
-    width: 50%;
+    width: 77%;
     height: 1px;
     top: 25px;
     left: 60px;
@@ -63,12 +64,43 @@ input::placeholder {
 
   &--radio {
     padding-top: 24px;
+
+    position: relative;
+    display: block;
+    cursor: pointer;
+    user-select: none;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -61px;
+      top: 22px;
+      width: 35px;
+      height: 35px;
+      border: 2px solid $text-color;
+      border-radius: 50%;
+    }
+
+    &:nth-of-type(2)::before {
+      top: 14px;
+    }
   }
 
   @media (min-width: $tablet-width) {
     &--radio {
       margin-left: 185px;
       margin-bottom: 35px;
+
+      &::before {
+        left: -76px;
+        top: 9px;
+        width: 46px;
+        height: 45px;
+      }
+
+      &:nth-of-type(2)::before {
+        top: 8px;
+      }
     }
 
     .form__heading {
@@ -80,6 +112,10 @@ input::placeholder {
   @media (min-width: $desktop-width) {
     &--radio {
       margin-left: 195px;
+    }
+
+    .form__heading {
+      left: 110px;
     }
   }
 }
@@ -95,6 +131,21 @@ input::placeholder {
   &--checkbox {
     padding-top: 24px;
     padding-bottom: 20px;
+
+    position: relative;
+    display: block;
+    cursor: pointer;
+    user-select: none;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -61px;
+      top: 13px;
+      width: 35px;
+      height: 35px;
+      border: 2px solid $text-color;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -105,7 +156,7 @@ input::placeholder {
     &--wrap {
       margin: 0 auto;
       padding-top: 64px;
-      padding-left: 193px;
+      padding-left: 211px;
       padding-bottom: 5px;
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -114,6 +165,13 @@ input::placeholder {
     &--checkbox {
       padding-bottom: 60px;
       padding-top: 0;
+
+      &::before {
+        left: -81px;
+        top: -15px;
+        width: 47px;
+        height: 47px;
+      }
     }
 
     &--checkbox:nth-of-type(odd) {
@@ -121,7 +179,7 @@ input::placeholder {
     }
 
     &--checkbox:nth-of-type(even) {
-      margin-left: 61px;
+      margin-left: 70px;
     }
 
     .form__heading {
@@ -133,9 +191,15 @@ input::placeholder {
   @media (min-width: $desktop-width) {
     &--wrap {
       width: 80%;
+      padding-left: 222px;
       margin-top: 5px;
       grid-template-columns: 1fr 1fr 1fr;
       grid-template-rows: auto auto;
+    }
+
+    &--checkbox::before {
+      left: -72px;
+      top: -23px;
     }
 
     &--checkbox:nth-of-type(odd) {
@@ -155,9 +219,24 @@ input::placeholder {
       padding-left: 35px;
     }
 
+    &--checkbox[for="white"]::before,
+    &--checkbox[for="black"]::before {
+      top: -22px;
+      left: -46px;
+    }
+
     &--checkbox[for="grey"],
     &--checkbox[for="pink"] {
       padding-left: 20px;
+    }
+
+    &--checkbox[for="grey"]::before,
+    &--checkbox[for="pink"]::before {
+      left: -60px;
+    }
+
+    .form__heading {
+      left: 110px;
     }
   }
 }
