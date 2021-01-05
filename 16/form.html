@@ -85,49 +85,50 @@
         <fieldset class="form__type container">
           <div class="form__heading form__heading--decorate">
             тип
-            <div class="prom"><span class="prom__s"></span></div>
           </div>
           <div class="form__type--wrap">
+            <input class="visually-hidden filter-input-radio" type="radio" name="type" id="accessories" checked>
             <label class="form__type--radio" for="accessories">
-              <input class="visually-hidden form__type--radio-input" type="radio" name="type" id="accessories" checked>
               Аксессуар для интерьера
             </label>
+            <input class="visually-hidden filter-input-radio" type="radio" name="type" id="toys">
             <label class="form__type--radio" for="toys">
-              <input class="visually-hidden form__type--radio-input" type="radio" name="type" id="toys">
               Детская игрушка
             </label>
           </div>
         </fieldset>
 
-        <fieldset class="form__colors container">
-          <div class="form__heading form__heading--decorate">
-            цвет
-          </div>
-          <div class="form__colors--wrap">
-            <label class="form__colors--checkbox" for="white">
-              <input class="visually-hidden" type="checkbox" name="white" id="white" checked>
-              Белый
-            </label>
-            <label class="form__colors--checkbox" for="grey">
-              <input class="visually-hidden" type="checkbox" name="grey" id="grey" checked>
-              Серый
-            </label>
-            <label class="form__colors--checkbox" for="tiffani">
-              <input class="visually-hidden" type="checkbox" name="tiffani" id="tiffani">
-              «Тиффани»
-            </label>
-            <label class="form__colors--checkbox" for="black">
-              <input class="visually-hidden" type="checkbox" name="black" id="black">
-              Черный
-            </label>
-            <label class="form__colors--checkbox" for="pink">
-              <input class="visually-hidden" type="checkbox" name="pink" id="pink">
-              Розовый
-            </label>
-            <label class="form__colors--checkbox" for="orange">
-              <input class="visually-hidden" type="checkbox" name="orange" id="orange">
-              Оранжевый
-            </label>
+        <fieldset class="form__colors--background">
+          <div class="form__colors container">
+            <div class="form__heading form__heading--decorate">
+              цвет
+            </div>
+            <div class="form__colors--wrap">
+              <input class="visually-hidden filter-input-checkbox" type="checkbox" name="white" id="white" checked>
+              <label class="form__colors--checkbox" for="white">
+                Белый
+              </label>
+              <input class="visually-hidden filter-input-checkbox" type="checkbox" name="grey" id="grey" checked>
+              <label class="form__colors--checkbox" for="grey">
+                Серый
+              </label>
+              <input class="visually-hidden filter-input-checkbox" type="checkbox" name="tiffani" id="tiffani">
+              <label class="form__colors--checkbox" for="tiffani">
+                «Тиффани»
+              </label>
+              <input class="visually-hidden filter-input-checkbox" type="checkbox" name="black" id="black">
+              <label class="form__colors--checkbox" for="black">
+                Черный
+              </label>
+              <input class="visually-hidden filter-input-checkbox" type="checkbox" name="pink" id="pink">
+              <label class="form__colors--checkbox" for="pink">
+                Розовый
+              </label>
+              <input class="visually-hidden filter-input-checkbox" type="checkbox" name="orange" id="orange">
+              <label class="form__colors--checkbox" for="orange">
+                Оранжевый
+              </label>
+            </div>
           </div>
         </fieldset>
 
@@ -149,15 +150,17 @@
               <input type="text" name="celebrated" id="celebrated" placeholder="Отчество, если желаете">
             </label>
           </div>
-          <div class="registration__adress container">
-            <label class="form__heading form__heading--telephone" for="telephone">
-              тел
-              <input type="tel" name="telephone" id="telephone" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
-            </label>
-            <label class="form__heading form__heading--e-mail" for="e-mail">
-              e-mail
-              <input type="email" name="e-mail" id="e-mail" placeholder="Ваш Email*">
-            </label>
+          <div class="registration--background">
+            <div class="registration__adress container">
+              <label class="form__heading form__heading--telephone" for="telephone">
+                тел
+                <input type="tel" name="telephone" id="telephone" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+              </label>
+              <label class="form__heading form__heading--e-mail" for="e-mail">
+                e-mail
+                <input type="email" name="e-mail" id="e-mail" placeholder="Ваш Email*">
+              </label>
+            </div>
           </div>
           <div class="registration__wishes container">
             <label class="form__heading form__heading--decorate" for="description">
