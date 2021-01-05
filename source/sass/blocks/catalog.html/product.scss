@@ -1,23 +1,14 @@
-.product {
-  min-width: 260px;
-  padding: 0 30px;
-
-  @media (min-width: $tablet-width) {
-    min-width: 668px;
-    padding: 0 50px;
-  }
-}
-
 .product__list {
   margin: 0;
   padding: 0;
+  padding-top: 30px;
   list-style: none;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   align-items: center;
 
   @media (min-width: $tablet-width) {
-    flex-direction: column;
+    padding-top: 77px;
     align-items: flex-start;
   }
 
@@ -27,12 +18,30 @@
   }
 }
 
+.product__item {
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    &:nth-of-type(1) .product__wrap {
+      padding-left: 31px;
+      padding-right: 73px;
+    }
+
+    &:nth-of-type(1) .product__link {
+      margin-right: -40px;
+      padding-right: 0;
+    }
+  }
+}
+
 .product__item--wrap {
+  padding-bottom: 30px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
 
   @media (min-width: $tablet-width) {
+    padding-bottom: 54px;
     flex-direction: row;
   }
 
@@ -42,28 +51,93 @@
 }
 
 .product__wrap {
+  padding-left: 27px;
+  padding-top: 13px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  border: 1px solid $border-color;
+  box-sizing: border-box;
+
+  &--description {
+    position: relative;
+  }
+
+  &--description::after {
+    content: "";
+    position: absolute;
+    width: 88%;
+    height: 1px;
+    bottom: -18px;
+    left: 0;
+    background-color: $border-color;
+  }
+
+  &--order {
+    padding-top: 40px;
+    padding-bottom: 26px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-right: 90px;
+    padding-left: 32px;
+    padding-top: 10px;
+
+
+    &--description::after {
+      width: 117%;
+      bottom: -174px;
+    }
+  }
+}
+
+.product__link {
+  padding-right: 26px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: -57px;
+    padding-right: 0;
+  }
 }
 
 .product__heading {
+  margin-bottom: 5px;
   font-size: 17px;
   line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 
 .product__characteristics {
   font-size: 13px;
   line-height: 30px;
   color: $text-color;
+
+  @media (min-width: $tablet-width) {
+    font-size: 15px;
+  }
 }
 
 .product__price {
   font-size: 15px;
   line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+  }
 }
 
 .product__img {
-  width: 334px;
-  height: 334px;
+  width: 260px;
+  height: 195px;
+
+  @media (min-width: $tablet-width) {
+    width: 334px;
+    height: 334px;
+  }
 }
