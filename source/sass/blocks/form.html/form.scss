@@ -120,7 +120,7 @@ input::placeholder {
     left: -76px;
     top: 9px;
     width: 46px;
-    height: 45px
+    height: 45px;
   }
 
   @media (min-width: $desktop-width) {
@@ -208,8 +208,6 @@ input::placeholder {
     &--checkbox {
       padding-bottom: 58px;
       padding-top: 0;
-
-
     }
 
     &--checkbox:nth-of-type(odd) {
@@ -326,7 +324,6 @@ input::placeholder {
 }
 
 @media (min-width: $desktop-width) {
-
   .filter-input-checkbox:checked + label[for="grey"]::after,
   .filter-input-checkbox:checked + label[for="pink"]::after {
     top: -5px;
