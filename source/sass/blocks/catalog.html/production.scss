@@ -1,28 +1,98 @@
 .production__wrap {
-  min-width: 260px;
-  padding: 0 30px;
-
+  width: 260px;
+  margin: 0 auto;
+  padding-bottom: 30px;
+  margin-bottom: 60px;
   display: flex;
   flex-direction: column;
+  border: 1px solid $border-color;
+  box-sizing: border-box;
+
+  .button {
+    width: 192px;
+    margin: 0 auto;
+  }
 
   @media (min-width: $tablet-width) {
-    min-width: 668px;
-    padding: 0 50px;
+    width: 668px;
+    padding-bottom: 45px;
+    margin-bottom: 64px;
+
+    .button {
+      width: 584px;
+      font-size: 17px;
+      line-height: 16px;
+    }
   }
 
   @media (min-width: $desktop-width) {
+    width: 100%;
+    margin-bottom: 104px;
+    padding-bottom: 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto auto;
+    grid-template-rows: max-content max-content auto;
+
+    .button {
+      width: 230px;
+      margin-left: 80px;
+    }
   }
 }
 
 .production__heading {
+  padding-top: 10px;
+  padding-left: 90px;
+  padding-bottom: 11px;
   font-size: 17px;
   line-height: 24px;
+  position: relative;
+
+  &::before {
+    content: url("../img/icon__video.svg");
+    position: absolute;
+    width: 32px;
+    height: 22px;
+    top: 23px;
+    left: 33px;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    padding-top: 23px;
+    padding-left: 106px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+
+    br {
+      display: none;
+    }
+
+    &::before {
+      top: 20px;
+      left: 41px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 78px;
+    padding-left: 78px;
+
+    br {
+      display: block;
+    }
+
+    &::before {
+      top: 28px;
+      left: 79px;
+    }
+  }
 }
 
 .production__img {
+  width: 260px;
+  height: 160px;
+
   @media (min-width: $tablet-width) {
     width: 668px;
     height: 455px;
@@ -30,12 +100,31 @@
   }
 
   @media (min-width: $desktop-width) {
+    width: 682px;
     grid-row: 1/4;
   }
 }
 
 .production__text {
+  padding-top: 12px;
+  padding-left: 34px;
+  padding-bottom: 30px;
   font-size: 13px;
   line-height: 24px;
   color: $text-color;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 9px;
+    padding-left: 39px;
+    padding-right: 40px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 12px;
+    padding-left: 78px;
+    padding-bottom: 41px;
+  }
 }

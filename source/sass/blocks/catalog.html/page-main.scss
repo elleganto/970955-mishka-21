@@ -4,10 +4,12 @@
   background-color: $footer-color;
 
   display: flex;
-}
 
-.main__description {
-  font-size: 13px;
-  line-height: 24px;
-  color: $text-color;
+  @media (min-width: $tablet-width) {
+    height: 226px;
+
+    .main__heading {
+      margin-top: 100px;
+    }
+  }
 }

@@ -19,7 +19,7 @@
   @media (min-width: $desktop-width) {
     font-size: 53px;
     line-height: 57px;
-    padding-top: 40px;
+    padding-top: 38px;
     padding-left: 175px;
   }
 }
@@ -57,6 +57,10 @@
   &--price {
     padding-top: 3px;
     padding-bottom: 27px;
+
+    @media (min-width: $desktop-width) {
+      padding-top: 0;
+    }
   }
 
   &--like {
@@ -65,10 +69,15 @@
 
   &--handmade {
     padding: 6px 0 20px 3px;
+
+    @media (min-width: $desktop-width) {
+      padding-top: 3px;
+    }
   }
 
   &--support {
     padding: 5px 0 27px 0;
+    margin-left: -6px;
   }
 
   &--delivery {
