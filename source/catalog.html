@@ -84,8 +84,14 @@
         <ul class="product__list">
           <li class="product__item">
             <article class="product__item--wrap">
-              <img class="product__img" src="https://via.placeholder.com/150x150" alt="фото изделия Зайчик-попрыгайчик"
-                width="150" height="150">
+              <picture class="product__img">
+                <source media="(min-width: 1150px)"
+                  srcset="img/product__rabbit-desktop.jpg 1x, img/product__rabbit-desktop@2.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/product__rabbit-tablet.jpg 1x, img/product__rabbit-tablet@2.jpg 2x">
+                <img src="img/product__rabbit-mobile.jpg" alt="фото изделия Зайчик-попрыгайчик" width="260" height="195"
+                  srcset="img/product__rabbit-mobile@2.jpg 2x">
+              </picture>
               <div class="product__wrap">
                 <div class="product__wrap--description">
                   <h2 class="product__heading">Зайчик-попрыгайчик</h2>
@@ -106,8 +112,14 @@
           </li>
           <li class="product__item">
             <article class="product__item--wrap">
-              <img class="product__img" src="https://via.placeholder.com/150x150" alt="фото изделия Корзинка для белья"
-                width="150" height="150">
+              <picture class="product__img">
+                <source media="(min-width: 1150px)"
+                  srcset="img/product__linen-desktop.jpg 1x, img/product__linen-desktop@2.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/product__linen-tablet.jpg 1x, img/product__linen-tablet@2.jpg 2x">
+                <img src="img/product__linen-mobile.jpg" alt="фото изделия Корзинка для белья" width="260" height="195"
+                  srcset="img/product__linen-mobile@2.jpg 2x">
+              </picture>
               <div class="product__wrap">
                 <div class="product__wrap--description">
                   <h2 class="product__heading">Корзинка для белья</h2>
@@ -128,8 +140,14 @@
           </li>
           <li class="product__item">
             <article class="product__item--wrap">
-              <img class="product__img" src="https://via.placeholder.com/150x150"
-                alt="фото изделия Болшьая корзинка для игрушек" width="150" height="150">
+              <picture class="product__img">
+                <source media="(min-width: 1150px)"
+                  srcset="img/product__toys-desktop.jpg 1x, img/product__toys-desktop@2.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/product__toys-tablet.jpg 1x, img/product__toys-tablet@2.jpg 2x">
+                <img src="img/product__toys-mobile.jpg" alt="фото изделия Болшьая корзинка для игрушек" width="260" height="195"
+                  srcset="img/product__toys-mobile@2.jpg 2x">
+              </picture>
               <div class="product__wrap">
                 <div class="product__wrap--description">
                   <h2 class="product__heading">Большая корзинка <br>для игрушек</h2>
@@ -154,8 +172,14 @@
       <section class="production container">
         <div class="production__wrap">
           <h2 class="production__heading">Процесс<br> производства</h2>
-          <img class="production__img" src="https://via.placeholder.com/150x150"
-            alt="фото изделия Болшьая корзинка для игрушек" width="150" height="150">
+          <picture class="production__img">
+            <source media="(min-width: 1150px)"
+              srcset="img/video-desktop.jpg 1x, img/video-desktop@2.jpg 2x">
+            <source media="(min-width: 768px)"
+              srcset="img/video-tablet.jpg 1x, img/video-tablet@2.jpg 2x">
+            <img src="img/video-mobile.jpg" alt="фото изделия Болшьая корзинка для игрушек" width="260" height="150"
+              srcset="img/video-mobile@2.jpg 2x">
+          </picture>
           <p class="production__text">
             По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том,
             как появляются наши товары.
