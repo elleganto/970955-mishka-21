@@ -92,16 +92,35 @@
 .production__img {
   width: 260px;
   height: 160px;
+  position: relative;
+
+  &::before {
+    content: url("../img/video__play.svg");
+    position: absolute;
+    width: 100px;
+    height: 77px;
+    top: 37px;
+    left: 79px;
+  }
 
   @media (min-width: $tablet-width) {
     width: 668px;
     height: 455px;
     order: -1;
+
+    &::before {
+      top: 187px;
+      left: 283px;
+    }
   }
 
   @media (min-width: $desktop-width) {
     width: 682px;
     grid-row: 1/4;
+
+    &::before {
+      left: 292px;
+    }
   }
 }
 

@@ -161,6 +161,14 @@
   color: inherit;
   position: relative;
 
+  &:hover {
+    color: $link-color;
+  }
+
+  &:active::after {
+    opacity: 0.1;
+  }
+
   &::after {
     content: "";
     position: absolute;

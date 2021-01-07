@@ -1,5 +1,8 @@
 .registration {
-  @extend %form-compilation;
+  padding: 0;
+  border: none;
+  margin: 0;
+  position: relative;
 
   input {
     width: 98%;

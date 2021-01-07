@@ -56,10 +56,15 @@ input::placeholder {
 }
 
 .form__type {
-  @extend %form-compilation;
+  padding: 0;
+  border: none;
+  margin: 0;
+  position: relative;
 
   &--wrap {
-    @extend %wrap-compilation;
+    margin-left: 61px;
+    display: flex;
+    flex-direction: column;
   }
 
   &--radio {
@@ -179,11 +184,16 @@ input::placeholder {
 }
 
 .form__colors {
-  @extend %form-compilation;
+  padding: 0;
+  border: none;
+  margin: 0;
+  position: relative;
   margin-top: 25px;
 
   &--wrap {
-    @extend %wrap-compilation;
+    margin-left: 61px;
+    display: flex;
+    flex-direction: column;
   }
 
   &--checkbox {
@@ -328,14 +338,14 @@ input::placeholder {
 }
 
 @media (min-width: $desktop-width) {
-  .filter-input-checkbox:checked + label[for="grey"]::after,
-  .filter-input-checkbox:checked + label[for="pink"]::after {
+  .filter-input-checkbox:checked+label[for="grey"]::after,
+  .filter-input-checkbox:checked+label[for="pink"]::after {
     top: -5px;
     left: -66px;
   }
 
-  .filter-input-checkbox:checked + label[for="tiffani"]::after,
-  .filter-input-checkbox:checked + label[for="orange"]::after {
+  .filter-input-checkbox:checked+label[for="tiffani"]::after,
+  .filter-input-checkbox:checked+label[for="orange"]::after {
     top: -5px;
     left: -71px;
   }

@@ -32,6 +32,16 @@
   }
 }
 
+.assortiment__link {
+  display: contents;
+  text-decoration: none;
+
+  &:hover .assortiment__offer {
+    padding-top: 36px;
+
+  }
+}
+
 .assortiment__offer {
   width: 100%;
   position: relative;

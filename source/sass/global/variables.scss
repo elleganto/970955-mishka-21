@@ -3,6 +3,7 @@
 $main-background: #ffffff;
 $heading-color: #000000;
 $text-color: #444444;
+$link-color: #46c1ae;
 $excretion-light: #63d1bb;
 $excretion-darck: #56c3b2;
 $underline-color: #62d1ba;
@@ -16,17 +17,3 @@ $border-color: #ececec;
 $tablet-width: 768px;
 $desktop-width: 1150px;
 $mobile-width-only: 767px;
-
-
-%form-compilation {
-  padding: 0;
-  border: none;
-  margin: 0;
-  position: relative;
-}
-
-%wrap-compilation {
-  margin-left: 61px;
-  display: flex;
-  flex-direction: column;
-}

@@ -38,7 +38,15 @@
 }
 
 .header__logo {
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
   @media (min-width: $tablet-width) {
+
     position: absolute;
     z-index: 1;
     top: 5px;
