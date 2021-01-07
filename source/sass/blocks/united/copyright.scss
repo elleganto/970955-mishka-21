@@ -1,13 +1,19 @@
 .footer__copyright {
   display: flex;
+  margin: 0 auto;
   margin-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    margin-bottom: 15px;
+  }
 }
 
 .copyright__heading {
   font-size: 19px;
   line-height: 18px;
   padding-top: 14px;
-  padding-left: 39px;
+  padding-left: 11px;
 
   @media (min-width: $tablet-width) {
     padding-left: 45px;

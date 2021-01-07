@@ -87,6 +87,10 @@ input::placeholder {
       &:nth-of-type(2)::before {
         top: 8px;
       }
+
+      br {
+        display: none;
+      }
     }
 
     .form__heading {

@@ -13,8 +13,12 @@
   <header class="page-header">
     <div class="header__wrapper">
       <a class="header__logo">
-        <img src="img/mishka-logo-mobile.svg.svg" alt="Логотип магазина Мишка" width="86" height="35"
-          class="header__logo-img">
+        <picture>
+          <source media="(min-width: 1150px)" srcset="img/mishka-logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/mishka-logo-tablet.svg">
+          <img src="img/mishka-logo-mobile.svg" alt="Логотип магазина Мишка" width="86" height="35"
+            class="header__logo-img">
+        </picture>
       </a>
       <nav class="header-navigation main-nav--closed main-nav--nojs">
         <button class="header-navigation__toggle ">
@@ -88,7 +92,7 @@
           <div class="form__type--wrap">
             <input class="visually-hidden filter-input-radio" type="radio" name="type" id="accessories" checked>
             <label class="form__type--radio" for="accessories">
-              Аксессуар для интерьера
+              Аксессуар для<br> интерьера
             </label>
             <input class="visually-hidden filter-input-radio" type="radio" name="type" id="toys">
             <label class="form__type--radio" for="toys">
