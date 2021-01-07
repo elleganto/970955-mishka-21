@@ -607,14 +607,17 @@ img {
 
 .products__img {
   grid-column: 2/3;
-  grid-row: 2/6;
-  margin-top: 30px; }
+  grid-row: 2/6; }
+  .products__img img {
+    margin-top: 30px; }
   @media (min-width: 768px) {
     .products__img {
       width: 334px;
       height: 404px;
       margin-top: 43px;
-      grid-column: 2/4; } }
+      grid-column: 2/4; }
+      .products__img img {
+        margin-top: 0; } }
   @media (min-width: 1150px) {
     .products__img {
       width: 525px;
