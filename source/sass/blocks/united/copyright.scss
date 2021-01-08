@@ -33,6 +33,15 @@
     }
   }
 
+  &:hover path {
+    fill: $link-color;
+  }
+
+  &:active path {
+    fill: $link-color;
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     margin-left: 10px;
   }

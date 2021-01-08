@@ -96,6 +96,15 @@ input::placeholder {
       br {
         display: none;
       }
+
+      &:hover::before {
+        border-color: $excretion-light;
+      }
+
+      &:active::before {
+        border-color: $heading-color;
+        opacity: 0.3;
+      }
     }
 
     .form__heading {
@@ -204,6 +213,15 @@ input::placeholder {
     display: block;
     cursor: pointer;
     user-select: none;
+
+    &:hover::before {
+      border-color: $excretion-light;
+    }
+
+    &:active::before {
+      border-color: $heading-color;
+      opacity: 0.3;
+    }
   }
 
   @media (min-width: $tablet-width) {

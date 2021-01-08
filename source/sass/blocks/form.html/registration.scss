@@ -72,6 +72,12 @@
     padding-bottom: 20px;
   }
 
+  &:hover input,
+  input:focus {
+    box-shadow: inset 0px -2px 0px $excretion-light;
+    outline: none;
+  }
+
   @media (min-width: $tablet-width) {
     margin-top: 0;
     margin-left: 167px;
@@ -94,6 +100,12 @@
   .form__heading {
     padding-top: 14px;
     position: static;
+
+    &:hover input,
+    input:focus {
+      box-shadow: inset 0px -2px 0px $excretion-light;
+      outline: none;
+    }
 
     &:nth-of-type(2) input {
       margin-bottom: 15px;
@@ -226,8 +238,14 @@
     padding-left: 16px;
     font-size: 17px;
     line-height: 18px;
-    color: $heading-color;
-    opacity: 0.3;
+    color: fade-out($heading-color, .3);
+    border: 2px solid $text-color;
+
+    &:hover,
+    &:focus {
+      border: 2px solid $excretion-light;
+      outline: none;
+    }
   }
 
   &--note {

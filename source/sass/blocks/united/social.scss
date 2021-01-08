@@ -23,3 +23,14 @@
   padding: 0;
   margin: 0 auto;
 }
+
+.social__link {
+  &:hover path {
+    fill: $link-color;
+  }
+
+  &:active path {
+    fill: $link-color;
+    opacity: 0.3;
+  }
+}
