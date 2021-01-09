@@ -134,7 +134,7 @@
               srcset="img/index__product@2.jpg 2x">
           </picture>
           <p class="products__price">Цена: 990 руб.</p>
-          <a class="products__button button " href="#">заказать</a>
+          <a class="products__button button order-product" href="#">заказать</a>
         </div>
       </section>
 
@@ -321,12 +321,12 @@
     <div class="modal--wrap">
       <h1 class="modal__heading">добавить<br> в корзину</h1>
       <p class="modal__text">Выберите размер:</p>
-      <div class="modal__list">
-        <button class="modal__item">s</button>
-        <button class="modal__item">m</button>
-        <button class="modal__item">l</button>
-      </div>
-      <button class="modal__button">добавить</button>
+      <form class="modal__list" method="GET">
+        <button class="modal__item" value="small">s</button>
+        <button class="modal__item" value="medium">m</button>
+        <button class="modal__item" value="large">l</button>
+      </form>
+      <button class="modal__button" type="submit">добавить</button>
     </div>
   </section>
 

@@ -142,12 +142,15 @@
   }
 }
 
-.product__link {
+.product__button {
   padding-right: 26px;
+  border: none;
+  outline: none;
+  background-color: inherit;
 
-  &:hover path {
-    fill: $excretion-light;
+  &:hover .product__button--icon {
     opacity: 1;
+    fill: $excretion-light;
   }
 
 

@@ -96,7 +96,8 @@
     outline: none;
   }
 
-  &:active {
+  &:active,
+  &:focus {
     border: 2px solid $excretion-light;
   }
 

@@ -1,6 +1,7 @@
-const orderProduct = document.querySelector(".products__button");
+const orderProduct = document.querySelector(".order-product");
 const orderPopup = document.querySelector(".modal");
 const orderAdd = orderPopup.querySelector(".modal__button");
+const item = document.querySelector("#model__item");
 
 orderProduct.addEventListener("click", function(evt) {
   evt.preventDefault();
