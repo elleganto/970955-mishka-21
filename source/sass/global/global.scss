@@ -47,7 +47,16 @@ img {
   line-height: 20px;
   text-transform: uppercase;
   color: $text-color;
-  border: 2px solid #444444;
+  border: 2px solid $text-color;
+
+  &:hover {
+    background-color: $text-color;
+    color: $main-background;
+  }
+
+  &:active {
+    color: fade-out($main-background, .3)
+  }
 }
 
 .container {

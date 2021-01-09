@@ -55,7 +55,7 @@
       height: 17px;
       position: absolute;
       top: 57px;
-      background-image: url("../img/zigzag-line-desktop.svg");
+      background-image: url("../img/zigzag-line-tablet.svg");
       background-position: 50%;
       background-repeat: repeat-x;
     }
@@ -160,6 +160,14 @@
   text-decoration: none;
   color: inherit;
   position: relative;
+
+  &:hover {
+    color: $link-color;
+  }
+
+  &:active::after {
+    opacity: 0.1;
+  }
 
   &::after {
     content: "";

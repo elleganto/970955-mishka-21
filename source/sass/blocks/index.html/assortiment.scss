@@ -7,7 +7,7 @@
     padding: 0 50px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background-color: $footer-color;
+    background-color: $index-background;
     position: relative;
 
     &::after {
@@ -17,9 +17,28 @@
       height: 24px;
       bottom: -14px;
       background-image: url("../img/zigzag__border.svg");
-      background-position: 50% 50%;
+      background-position: 50%;
       background-repeat: repeat-x;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      height: 34px;
+      left: 16px;
+      bottom: -19px;
+      background-image: url("../img/zigzag__border__desktop.svg");
+    }
+  }
+}
+
+.assortiment__link {
+  display: contents;
+  text-decoration: none;
+
+  &:hover .assortiment__offer {
+    padding-top: 36px;
+
   }
 }
 

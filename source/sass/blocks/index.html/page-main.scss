@@ -35,17 +35,27 @@
 .main__heading--wrap-index {
   min-width: 320px;
   height: 283px;
-
-  background-image: url("../img/mobile__logo.jpg");
+  display: flex;
+  background-image: url("../img/mobile__background.jpg");
   background-position: 50% -17px;
   background-repeat: no-repeat;
-  background-color: $footer-color;
+  background-color: $index-background;
 
-  display: flex;
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/mobile__background@2.jpg");
+    background-size: 320px auto;
+  }
 
   @media (min-width: $tablet-width) {
     min-width: 768px;
     height: 624px;
     border-top: 1px solid fade-out($heading-color, .9);
+    background-image: url("../img/tablet__background.jpg");
+    background-position: 50% -3px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/tablet__background@2.jpg");
+      background-size: 768px auto;
+    }
   }
 }
