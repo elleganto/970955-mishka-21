@@ -50,7 +50,7 @@
 }
 
 .production__heading {
-  padding-top: 10px;
+  padding-top: 6px;
   padding-left: 90px;
   padding-bottom: 11px;
   font-size: 17px;
@@ -58,11 +58,11 @@
   position: relative;
 
   &::before {
-    content: url("../img/icon__video.svg");
+    content: url("../img/icons/icon__video.svg");
     position: absolute;
     width: 32px;
     height: 22px;
-    top: 23px;
+    top: 19px;
     left: 33px;
   }
 
@@ -89,6 +89,10 @@
 
     br {
       display: block;
+    }
+
+    &--space {
+      display: none;
     }
 
     &::before {

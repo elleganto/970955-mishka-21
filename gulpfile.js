@@ -41,6 +41,8 @@ const html = () => {
     .pipe(gulp.dest("build"));
 }
 
+exports.html = html;
+
 // Scripts
 
 const scripts = () => {
