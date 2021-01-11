@@ -27,13 +27,10 @@
   svg {
     width: 45px;
     height: 35px;
-
-    path {
-      fill: $excretion-light;
-    }
+    fill: $excretion-light;
   }
 
-  &:hover path {
+  &:hover svg{
     fill: $link-color;
   }
 
