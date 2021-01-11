@@ -82,7 +82,7 @@ const sprite = () => {
   return gulp.src("source/img/icons/*.svg")
     .pipe(svgstore())
     .pipe(rename("sprite.svg"))
-    .pipe(gulp.dest("build/img/icons"));
+    .pipe(gulp.dest("build/img"));
 }
 
 exports.sprite = sprite;
@@ -135,7 +135,7 @@ const reload = done => {
 // Watcher
 
 const watcher = () => {
-  gulp.watch("source/less/**/*.less", gulp.series(styles));
+  gulp.watch("source/sass/**/*.scss", gulp.series(styles));
   gulp.watch("source/js/script.js", gulp.series(scripts));
   gulp.watch("source/*.html", gulp.series(html, reload));
 }
