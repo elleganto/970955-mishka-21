@@ -5,7 +5,7 @@
   position: relative;
 
   input {
-    width: 98%;
+    width: 96.5%;
     display: block;
     box-shadow: inset 0px -2px 0px $heading-color;
     border: none;
@@ -53,7 +53,7 @@
 }
 
 .registration__client {
-  margin-bottom: 30px;
+  margin-bottom: 34px;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -67,9 +67,9 @@
   margin-top: 20px;
 
   input {
-    margin-top: 15px;
-    margin-bottom: 19px;
-    padding-bottom: 20px;
+    margin-top: 19px;
+    margin-bottom: 22px;
+    padding-bottom: 17px;
   }
 
   &:hover input,
@@ -108,7 +108,9 @@
     }
 
     &:nth-of-type(2) input {
-      margin-bottom: 15px;
+      margin-bottom: 17px;
+      margin-top: 22px;
+      padding-bottom: 17px;
     }
 
     &--telephone::after {
@@ -160,9 +162,11 @@
   }
 
   input {
-    margin-top: 15px;
+    width: 97%;
+    margin-top: 19px;
     margin-bottom: 34px;
-    padding-bottom: 20px;
+    padding-bottom: 19px;
+    padding-left: 1px;
   }
 
   @media (min-width: $tablet-width) {
@@ -259,6 +263,10 @@
   .form__heading {
     display: block;
     padding-bottom: 20px;
+
+    &--decorate::after {
+      width: 75.5%;
+    }
   }
 
   @media (min-width: $tablet-width) {

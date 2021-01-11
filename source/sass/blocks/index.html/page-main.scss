@@ -20,8 +20,8 @@
     line-height: 50px;
     margin-top: 152px;
 
-    br {
-      display: none;
+    &--gap {
+      display: inline-block;
     }
   }
 

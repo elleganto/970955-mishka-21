@@ -43,7 +43,8 @@
   font-size: 13px;
   line-height: 24px;
   color: $text-color;
-  padding: 0 30px;
+  padding-left: 30px;
+  padding-right: 35px;
 
   @media (min-width: $tablet-width) {
     width: 668px;

@@ -56,13 +56,11 @@ input::placeholder {
 }
 
 .form__type {
-  padding: 0;
   border: none;
-  margin: 0;
   position: relative;
 
   &--wrap {
-    margin-left: 61px;
+    margin-left: 60px;
     display: flex;
     flex-direction: column;
   }
@@ -193,9 +191,7 @@ input::placeholder {
 }
 
 .form__colors {
-  padding: 0;
   border: none;
-  margin: 0;
   position: relative;
   margin-top: 25px;
 
