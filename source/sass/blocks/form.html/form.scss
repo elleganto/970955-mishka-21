@@ -30,7 +30,7 @@
   &--decorate::after {
     content: "";
     position: absolute;
-    width: 77%;
+    width: 75.5%;
     height: 1px;
     top: 25px;
     left: 60px;
@@ -56,6 +56,7 @@ input::placeholder {
 }
 
 .form__type {
+  margin: 0;
   border: none;
   position: relative;
 

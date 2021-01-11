@@ -23,7 +23,7 @@
       padding-left: 20px;
 
       &[name="name"] {
-        width: 80%;
+        width: 80.4%;
       }
 
       &::placeholder {
@@ -56,6 +56,7 @@
   margin-bottom: 34px;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 27px;
     display: flex;
     flex-direction: column;
     margin-top: 48px;
@@ -81,6 +82,10 @@
   @media (min-width: $tablet-width) {
     margin-top: 0;
     margin-left: 167px;
+
+    input {
+      margin-top: 21px;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -116,9 +121,9 @@
     &--telephone::after {
       content: "";
       position: absolute;
-      width: 62%;
+      width: 61.5%;
       height: 1px;
-      top: 8px;
+      top: 7px;
       left: 90px;
       background-color: $underline-color;
 
@@ -128,7 +133,7 @@
     }
 
     &--telephone::before {
-      content: url("../img/icon__phone.svg");
+      content: url("../img/icons/icon__phone.svg");
       position: absolute;
       width: 32px;
       height: 21px;
@@ -142,7 +147,7 @@
       position: absolute;
       width: 56%;
       height: 1px;
-      top: 115px;
+      top: 114px;
       left: 108px;
       background-color: $underline-color;
 
@@ -152,7 +157,7 @@
     }
 
     &--e-mail::before {
-      content: url("../img/icon__mail.svg");
+      content: url("../img/icons/icon__mail.svg");
       position: absolute;
       width: 32px;
       height: 21px;
@@ -199,6 +204,7 @@
     input {
       width: 71.6%;
       margin-left: 130px;
+      padding-left: 18px;
       background-color: inherit;
     }
 
@@ -235,15 +241,17 @@
 
 .registration__wishes {
   &--text {
-    width: 241px;
-    height: 123px;
-    margin-bottom: 10px;
+    width: 238px;
+    height: 117px;
+    margin-bottom: 14px;
     padding-top: 21px;
     padding-left: 16px;
+    font-family: "Open Sans", "Arial", sans-serif;
     font-size: 17px;
     line-height: 18px;
     color: fade-out($heading-color, .3);
     border: 2px solid $text-color;
+    box-sizing: content-box;
 
     &:hover,
     &:focus {
@@ -276,10 +284,12 @@
     position: relative;
 
     &--text {
-      width: 478px;
+      width: 480px;
+      height: 122px;
       font-size: 19px;
-      margin-left: 170px;
+      margin-left: 167px;
       margin-bottom: 55px;
+      margin-right: 0;
       padding-top: 15px;
       padding-left: 14px;
     }
