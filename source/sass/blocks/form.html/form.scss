@@ -36,10 +36,6 @@
     left: 0;
     background-color: $underline-color;
     z-index: -1;
-
-    @media (min-width: $tablet-width) {
-      display: none;
-    }
   }
 
   &--text {
@@ -68,6 +64,14 @@
     font-size: 17px;
     line-height: 16px;
     position: absolute;
+
+    &--decorate::after {
+      display: none;
+    }
+
+    &--text {
+      background-color: inherit;
+    }
   }
 }
 

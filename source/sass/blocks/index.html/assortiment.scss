@@ -35,6 +35,24 @@
 .assortiment__link {
   display: contents;
   text-decoration: none;
+
+  &:hover svg {
+    opacity: 0.7;
+  }
+
+  &:active svg {
+    opacity: 0.3;
+  }
+
+  &:hover .assortiment__offer--interior,
+  &:active .assortiment__offer--interior {
+    background-color: $interior-hover;
+  }
+
+  &:hover .assortiment__offer--toys,
+  &:active .assortiment__offer--toys {
+    background-color: $link-color;
+  }
 }
 
 .assortiment__offer {
@@ -55,6 +73,7 @@
     position: absolute;
     top: 23px;
     right: 36px;
+    opacity: 0.5;
   }
 
   &--toys {
@@ -65,6 +84,7 @@
     position: absolute;
     top: 21px;
     right: 27px;
+    opacity: 0.5;
   }
 
   @media (min-width: $tablet-width) {
