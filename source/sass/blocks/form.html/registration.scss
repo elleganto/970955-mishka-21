@@ -52,8 +52,6 @@
     padding-left: 0;
   }
 
-
-
   @media (min-width: $tablet-width) {
     margin-bottom: 27px;
     display: flex;
@@ -104,17 +102,6 @@
     background-color: $footer-color;
   }
 }
-
-
-.proba {
-  position: relative;
-
-  @media (min-width: $tablet-width) {
-    margin-top: -15px;
-  }
-}
-
-
 
 .registration__adress {
   .form__heading {
@@ -169,7 +156,6 @@
     padding-bottom: 12px;
     display: flex;
     flex-direction: column;
-
 
     .form__heading {
       padding-bottom: 0;
@@ -253,7 +239,6 @@
     color: fade-out($heading-color, .3);
     border: 2px solid $text-color;
     box-sizing: content-box;
-
 
     &:hover,
     &:focus {
