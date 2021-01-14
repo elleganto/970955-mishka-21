@@ -77,7 +77,7 @@
     <div class="main__heading--wrap-index">
       <div class="main__heading--wrap container">
         <h1 class="main__heading">
-          Милые штуки <br class="main__heading--gap"> &nbsp;ручной <br> работы для дома
+          Милые штуки&nbsp; <br class="main__heading--gap"> ручной <br> работы для дома
         </h1>
       </div>
     </div>
@@ -87,11 +87,19 @@
         <a href=# class="assortiment__link">
           <p class="assortiment__offer assortiment__offer--interior">
             Предметы<br> интерьера
+            <svg width="41" height="62" viewBox="0 0 40 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="img/sprite.svg#interior-img"></use>
+            </svg>
           </p>
         </a>
-        <p class="assortiment__offer assortiment__offer--toys">
-          Детские<br> игрушки
-        </p>
+        <a href=# class="assortiment__link">
+          <p class="assortiment__offer assortiment__offer--toys">
+            Детские<br> игрушки
+            <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="img/sprite.svg#toy-img"></use>
+            </svg>
+          </p>
+        </a>
       </section>
 
       <section class="products">
@@ -205,8 +213,8 @@
           <ul class="reviews__switch">
             <li class="reviews__switch--item">
               <button class="reviews__switch--box">
-                <svg width="50" height="26" viewBox="0 0 50 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M50 11H7.7L15.8 2.8L13 0L0 13L13 26L15.8 23.2L7.7 15H50V11Z" fill="black" />
+                <svg width="50" height="26" viewBox="0 0 50 26" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="img/sprite.svg#arrow-left"></use>
                 </svg>
                 <span class="visually-hidden">предыдущий отзыв</span>
               </button>
@@ -214,7 +222,7 @@
             <li class="reviews__switch--item">
               <button class="reviews__switch--box">
                 <svg width="50" height="26" viewBox="0 0 50 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M0 11H42.3L34.2 2.8L37 0L50 13L37 26L34.2 23.2L42.3 15H0V11Z" fill="black" />
+                  <use xlink:href="img/sprite.svg#arrow-right"></use>
                 </svg>
                 <span class="visually-hidden">следующий отзыв</span>
               </button>
@@ -252,7 +260,7 @@
   <footer class="page-footer">
     <div class="footer__wraper container">
       <a class="footer__logo">
-        <svg class="footer__logo-img" width="102" height="34" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg class="footer__logo--img" width="102" height="34" fill="none" xmlns="http://www.w3.org/2000/svg">
           <use xlink:href="img/sprite.svg#logo-footer"></use>
         </svg>
       </a>
@@ -285,7 +293,7 @@
       <section class="footer__copyright">
         <h2 class="copyright__heading">Разработано</h2>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
+          <svg width="27" height="34" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
             <use xlink:href="img/sprite.svg#htmlacademy"></use>
           </svg>
         </a>
@@ -298,32 +306,14 @@
       <h1 class="modal__heading">добавить<br> в корзину</h1>
       <p class="modal__text">Выберите размер:</p>
       <div class="modal__list">
-        <button class="modal__item" >s</button>
-        <button class="modal__item" >m</button>
-        <button class="modal__item" >l</button>
+        <button class="modal__item">s</button>
+        <button class="modal__item">m</button>
+        <button class="modal__item">l</button>
       </div>
       <button class="modal__button" type="submit">добавить</button>
     </div>
   </section>
 
-
-  <script>
-    var navMain = document.querySelector('.header-navigation');
-    var navToggle = document.querySelector('.header-navigation__toggle');
-
-    navMain.classList.remove('main-nav--nojs');
-
-    navToggle.addEventListener('click', function () {
-      if (navMain.classList.contains('main-nav--closed')) {
-        navMain.classList.remove('main-nav--closed');
-        navMain.classList.add('main-nav--opened');
-      } else {
-        navMain.classList.add('main-nav--closed');
-        navMain.classList.remove('main-nav--opened');
-      }
-    });
-
-  </script>
   <script src="js/script.min.js"></script>
 </body>
 

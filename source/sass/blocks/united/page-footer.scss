@@ -19,11 +19,15 @@
 .footer__logo {
   display: none;
 
-  &:hover path {
+  &--img {
+    fill: $heading-color;
+  }
+
+  &:hover .footer__logo--img {
     fill: $link-color;
   }
 
-  &:active path {
+  &:active .footer__logo--img {
     fill: $link-color;
     opacity: 0.3;
   }

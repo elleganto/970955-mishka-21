@@ -83,12 +83,12 @@
       <form class="form" action="https://echo.htmlacademy.ru" method="GET">
         <fieldset class="form__type container">
           <div class="form__heading form__heading--decorate">
-            тип
+            <span class="form__heading--text form__heading--type">тип</span>
           </div>
           <div class="form__type--wrap">
             <input class="visually-hidden filter-input-radio" type="radio" name="type" id="accessories" checked>
             <label class="form__type--radio" for="accessories">
-              Аксессуар для<br> &nbsp;интерьера
+              Аксессуар для&nbsp;<br> интерьера
             </label>
             <input class="visually-hidden filter-input-radio" type="radio" name="type" id="toys">
             <label class="form__type--radio" for="toys">
@@ -100,7 +100,7 @@
         <fieldset class="form__colors--background">
           <div class="form__colors container">
             <div class="form__heading form__heading--decorate">
-              цвет
+              <span class="form__heading--text form__heading--color">цвет</span>
             </div>
             <div class="form__colors--wrap">
               <input class="visually-hidden filter-input-checkbox" type="checkbox" name="white" id="white" checked>
@@ -134,8 +134,9 @@
         <fieldset class="registration">
           <div class="registration__client container">
             <div class="form__heading form__heading--decorate">
-              фио
+              <span class="form__heading--text form__heading--client">фио</span>
             </div>
+            <!-- <div class="orient"> -->
             <label class="registration__heading" for="name">
               Имя:
               <input type="text" name="name" id="name" required placeholder="Введите ваше имя*">
@@ -148,22 +149,33 @@
               Отчество:
               <input type="text" name="celebrated" id="celebrated" required placeholder="Отчество, если желаете">
             </label>
+            <!-- </div> -->
           </div>
           <div class="registration--background">
             <div class="registration__adress container">
-              <label class="form__heading form__heading--telephone" for="telephone">
-                тел
+              <div class="form__heading form__heading--decorate">
+                <span class="form__heading--text form__heading--telephone">тел</span>
+              </div>
+              <label class="registration__adress--wrap " for="telephone">
                 <input type="tel" name="telephone" id="telephone" required placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+                <svg class="registration__adress--telephone" width="25" height="24" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="img/sprite.svg#icon__phone"></use>
+                </svg>
               </label>
-              <label class="form__heading form__heading--e-mail" for="e-mail">
-                e-mail
+              <div class="form__heading form__heading--decorate">
+                <span class="form__heading--text form__heading--e-mail">e-mail</span>
+              </div>
+              <label class="registration__adress--wrap" for="e-mail">
                 <input type="email" name="e-mail" id="e-mail" required placeholder="Ваш Email*">
+                <svg class="registration__adress--e-mail" width="32" height="21" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="img/sprite.svg#icon__mail"></use>
+                </svg>
               </label>
             </div>
           </div>
           <div class="registration__wishes container">
             <label class="form__heading form__heading--decorate" for="description">
-              доп
+              <span class="probs probs--additionally">доп</span>
             </label>
             <textarea class="registration__wishes--text" name="description" id="description" cols="30" rows="10">Опишите все ваши пожелания к заказу
             </textarea>
@@ -182,7 +194,7 @@
   <footer class="page-footer">
     <div class="footer__wraper container">
       <a class="footer__logo">
-        <svg class="footer__logo-img" width="102" height="34" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg class="footer__logo--img" width="102" height="34" fill="none" xmlns="http://www.w3.org/2000/svg">
           <use xlink:href="img/sprite.svg#logo-footer"></use>
         </svg>
       </a>
@@ -223,24 +235,7 @@
     </div>
   </footer>
 
-
-  <script>
-    var navMain = document.querySelector('.header-navigation');
-    var navToggle = document.querySelector('.header-navigation__toggle');
-
-    navMain.classList.remove('main-nav--nojs');
-
-    navToggle.addEventListener('click', function () {
-      if (navMain.classList.contains('main-nav--closed')) {
-        navMain.classList.remove('main-nav--closed');
-        navMain.classList.add('main-nav--opened');
-      } else {
-        navMain.classList.add('main-nav--closed');
-        navMain.classList.remove('main-nav--opened');
-      }
-    });
-
-  </script>
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>

@@ -35,11 +35,6 @@
 .assortiment__link {
   display: contents;
   text-decoration: none;
-
-  &:hover .assortiment__offer {
-    padding-top: 36px;
-
-  }
 }
 
 .assortiment__offer {
@@ -56,8 +51,7 @@
     background-color: $excretion-light;
   }
 
-  &--interior::after {
-    content: url("../img/interior-img.svg");
+  &--interior svg {
     position: absolute;
     top: 23px;
     right: 36px;
@@ -67,8 +61,7 @@
     background-color: $excretion-darck;
   }
 
-  &--toys::after {
-    content: url("../img/toy-img.svg");
+  &--toys svg {
     position: absolute;
     top: 21px;
     right: 27px;
@@ -81,11 +74,11 @@
     font-size: 20px;
     line-height: 30px;
 
-    &--interior::after {
+    &--interior svg {
       top: 29px;
     }
 
-    &--toys::after {
+    &--toys svg {
       top: 32px;
       right: 33px;
     }

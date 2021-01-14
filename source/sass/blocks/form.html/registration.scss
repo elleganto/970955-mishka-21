@@ -31,10 +31,6 @@
         line-height: 18px;
       }
     }
-
-    .form__heading {
-      position: absolute;
-    }
   }
 
   @media (min-width: $desktop-width) {
@@ -43,6 +39,10 @@
 
       &[name="name"] {
         width: 69%;
+      }
+
+      &[name="celebrated"] {
+        margin-left: 23x;
       }
     }
 
@@ -53,7 +53,7 @@
 }
 
 .registration__client {
-  margin-bottom: 34px;
+  margin-bottom: 0;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 27px;
@@ -63,6 +63,21 @@
     position: relative;
   }
 }
+
+
+
+// .orient {
+//   width: 100%;
+
+//   @media (min-width: $tablet-width) {
+//     width: 76%;
+//     align-items: baseline;
+//     padding-left: 167px;
+//   }
+// }
+
+
+
 
 .registration__heading {
   margin-top: 20px;
@@ -103,14 +118,9 @@
   position: relative;
 
   .form__heading {
-    padding-top: 14px;
-    position: static;
-
-    &:hover input,
-    input:focus {
-      box-shadow: inset 0px -2px 0px $excretion-light;
-      outline: none;
-    }
+    padding-top: 12px;
+    padding-bottom: 21px;
+    position: relative;
 
     &:nth-of-type(2) input {
       margin-bottom: 17px;
@@ -118,71 +128,58 @@
       padding-bottom: 17px;
     }
 
-    &--telephone::after {
-      content: "";
-      position: absolute;
-      width: 61.5%;
-      height: 1px;
-      top: 7px;
-      left: 90px;
-      background-color: $underline-color;
-
-      @media (min-width: $tablet-width) {
-        display: none;
-      }
+    &--decorate::after {
+      top: 38%;
     }
 
-    &--telephone::before {
-      content: url("../img/icons/icon__phone.svg");
-      position: absolute;
-      width: 32px;
-      height: 21px;
-      top: 32px;
-      right: 35px;
-    }
+    // &--decorate:nth-of-type(2):after {
+    //   width: 69.5%;
+    //   left: 77px;
+    // }
+  }
 
+  &--wrap:hover svg,
+  input:focus + svg {
+    fill: $underline-color;
+    opacity: 1;
+  }
 
-    &--e-mail::after {
-      content: "";
-      position: absolute;
-      width: 56%;
-      height: 1px;
-      top: 114px;
-      left: 108px;
-      background-color: $underline-color;
+  &--telephone {
+    position: absolute;
+    top: 42px;
+    right: 13%;
+    opacity: 0.2;
+  }
 
-      @media (min-width: $tablet-width) {
-        display: none;
-      }
-    }
-
-    &--e-mail::before {
-      content: url("../img/icons/icon__mail.svg");
-      position: absolute;
-      width: 32px;
-      height: 21px;
-      bottom: 15px;
-      right: 38px;
-    }
+  &--e-mail {
+    position: absolute;
+    bottom: 16px;
+    right: 11.6%;
+    opacity: 0.2;
   }
 
   input {
     width: 97%;
-    margin-top: 19px;
-    margin-bottom: 34px;
+    margin-top: 0;
+    margin-bottom: 24px;
     padding-bottom: 19px;
     padding-left: 1px;
+
+    &:hover,
+    &:focus {
+      box-shadow: inset 0px -2px 0px $excretion-light;
+      outline: none;
+    }
   }
 
   @media (min-width: $tablet-width) {
-    padding-top: 47px;
-    padding-bottom: 34px;
+    padding-top: 64px;
+    padding-bottom: 16px;
     display: flex;
     flex-direction: column;
 
 
     .form__heading {
-      position: static;
       padding-bottom: 0;
       padding-top: 0;
 
@@ -190,50 +187,55 @@
         margin-left: 105px;
       }
 
-      &--telephone::before {
-        top: 26%;
-        right: 9%;
-      }
-
-      &--e-mail::before {
-        bottom: 29%;
-        right: 9.5%;
+      &:nth-of-type(2) {
+        padding-top: 5px;
       }
     }
 
     input {
       width: 71.6%;
-      margin-left: 130px;
+      margin-left: 167px;
+      margin-bottom: 33px;
       padding-left: 18px;
       background-color: inherit;
     }
 
-    label:nth-of-type(2) {
+    &--wrap {
       margin-top: -15px;
     }
+
+    &--telephone {
+      top: 61px;
+      right: 10%;
+    }
+
+    &--e-mail {
+      bottom: 66px;
+      right: 9.4%;
+    }
+
   }
 
   @media (min-width: $desktop-width) {
     input {
-      width: 68.6%;
-      margin-left: 78px;
+      width: 64.9%;
+      margin-left: 174px;
+    }
+
+    &--telephone {
+      right: 20.3%;
+    }
+
+    &--e-mail {
+      right: 20%;
     }
 
     .form__heading {
       padding-left: 61px;
+      left: 0;
 
       &:nth-of-type(2) input {
         margin-left: 53px;
-      }
-
-      &--telephone::before {
-        top: 62px;
-        right: 226px;
-      }
-
-      &--e-mail::before {
-        bottom: 63px;
-        right: 229px;
       }
     }
   }
@@ -241,7 +243,7 @@
 
 .registration__wishes {
   &--text {
-    width: 238px;
+    width: 90%;
     height: 117px;
     margin-bottom: 14px;
     padding-top: 21px;
@@ -271,9 +273,10 @@
   .form__heading {
     display: block;
     padding-bottom: 20px;
+    padding-top: 10px;
 
     &--decorate::after {
-      width: 75.5%;
+      top: 17px;
     }
   }
 
@@ -284,11 +287,10 @@
     position: relative;
 
     &--text {
-      width: 480px;
       height: 122px;
       font-size: 19px;
       margin-left: 167px;
-      margin-bottom: 55px;
+      margin-bottom: 51px;
       margin-right: 0;
       padding-top: 15px;
       padding-left: 14px;
@@ -302,6 +304,10 @@
       font-size: 17px;
       line-height: 30px;
     }
+
+    .form__heading {
+      padding-top: 19px;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -310,12 +316,12 @@
       height: 124px;
       padding-top: 15px;
       margin-left: 175px;
-      margin-bottom: 49px;
+      margin-bottom: 46px;
     }
 
     &--note {
       margin-left: 169px;
-      margin-top: 15px;
+      margin-top: 13px;
     }
   }
 }
@@ -323,6 +329,8 @@
 .form__button {
   @media (min-width: $tablet-width) {
     width: 230px;
+    font-size: 17px;
+    line-height: 16px;
   }
 
   @media (min-width: $desktop-width) {

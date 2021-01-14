@@ -1,3 +1,22 @@
+// Navigation block
+
+const navMain = document.querySelector('.header-navigation');
+const navToggle = document.querySelector('.header-navigation__toggle');
+
+navMain.classList.remove('main-nav--nojs');
+
+navToggle.addEventListener('click', function () {
+  if (navMain.classList.contains('main-nav--closed')) {
+    navMain.classList.remove('main-nav--closed');
+    navMain.classList.add('main-nav--opened');
+  } else {
+    navMain.classList.add('main-nav--closed');
+    navMain.classList.remove('main-nav--opened');
+  }
+ });
+
+// Modal window
+
 const orderProduct = document.querySelector(".order-product");
 const orderPopup = document.querySelector(".modal");
 const orderAdd = orderPopup.querySelector(".modal__button");
@@ -21,3 +40,5 @@ window.addEventListener("keydown", function (evt) {
     }
   }
 });
+
+

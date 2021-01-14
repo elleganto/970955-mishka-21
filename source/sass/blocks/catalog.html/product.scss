@@ -160,9 +160,13 @@
   outline: none;
   background-color: inherit;
 
+  &--icon {
+    opacity: 0.2;
+  }
+
   &:hover .product__button--icon {
-    opacity: 1;
     fill: $excretion-light;
+    opacity: 1;
   }
 
 

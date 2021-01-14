@@ -7,7 +7,7 @@
 
   @media (min-width: $tablet-width) {
     margin-top: 55px;
-    margin-bottom: 48px;
+    margin-bottom: 50px;
     font-size: 19px;
     line-height: 18px;
   }
@@ -30,15 +30,38 @@
   &--decorate::after {
     content: "";
     position: absolute;
-    width: 75.5%;
+    width: 98%;
     height: 1px;
     top: 25px;
-    left: 60px;
+    left: 0;
     background-color: $underline-color;
+    z-index: -1;
 
     @media (min-width: $tablet-width) {
       display: none;
     }
+  }
+
+  &--text {
+    background-color: $main-background;
+    padding-right: 20px;
+    z-index: 1;
+  }
+
+  &--type {
+    padding-right: 23px;
+  }
+
+  &--colors {
+    padding-right: 16px;
+  }
+
+  &--client {
+    padding-right: 18px;
+  }
+
+  &--telephone {
+    padding-right: 28px;
   }
 
   @media (min-width: $tablet-width) {
@@ -58,7 +81,6 @@ input::placeholder {
 .form__type {
   margin: 0 auto;
   border: none;
-  position: relative;
 
   &--wrap {
     margin-left: 60px;
@@ -80,6 +102,8 @@ input::placeholder {
   }
 
   @media (min-width: $tablet-width) {
+    position: relative;
+
     &--wrap {
       padding-bottom: 30px;
     }
@@ -123,7 +147,7 @@ input::placeholder {
   }
 }
 
-.filter-input-radio + label::before {
+.filter-input-radio+label::before {
   content: "";
   position: absolute;
   left: -61px;
@@ -145,7 +169,7 @@ input::placeholder {
   }
 }
 
-.filter-input-radio:checked + label::after {
+.filter-input-radio:checked+label::after {
   content: "";
   position: absolute;
   top: 33px;
@@ -167,7 +191,7 @@ input::placeholder {
   }
 }
 
-.filter-input-radio:checked + label:nth-of-type(2)::after {
+.filter-input-radio:checked+label:nth-of-type(2)::after {
   top: 26px;
   left: -49px;
 
@@ -315,7 +339,7 @@ input::placeholder {
   }
 }
 
-.filter-input-checkbox + label::before {
+.filter-input-checkbox+label::before {
   content: "";
   position: absolute;
   left: -61px;
@@ -332,7 +356,7 @@ input::placeholder {
   }
 }
 
-.filter-input-checkbox:checked + label::after {
+.filter-input-checkbox:checked+label::after {
   content: url("../img/tick.svg");
   position: absolute;
   top: 25px;
@@ -353,6 +377,7 @@ input::placeholder {
 }
 
 @media (min-width: $desktop-width) {
+
   .filter-input-checkbox:checked+label[for="grey"]::after,
   .filter-input-checkbox:checked+label[for="pink"]::after {
     top: -5px;

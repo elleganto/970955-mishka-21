@@ -16,7 +16,8 @@
     "gulp-sass": "4.1.0",
     "gulp-sourcemaps": "3.0.0",
     "gulp-svgstore": "^7.0.1",
-    "gulp-uglify": "^3.0.2",
+    "gulp-uglify-es": "^2.0.0",
+    "gulp-string-replace": "^1.1.2",
     "gulp-webp": "^4.0.1",
     "pixel-glass": "^1.0.13",
     "postcss": "8.1.7",
@@ -28,7 +29,7 @@
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
     "test": "npm run editorconfig && npm run stylelint",
-    "build": "gulp styles",
+    "build": "gulp build",
     "start": "gulp"
   },
   "browserslist": [
@@ -47,5 +48,8 @@
   "engines": {
     "node": "14.15.0"
   },
-  "dependencies": {}
+  "dependencies": {
+
+
+  }
 }

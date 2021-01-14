@@ -40,6 +40,7 @@
 }
 
 .main-nav--opened .header-navigation__toggle {
+
   &::before,
   &::after {
     content: "";
@@ -123,6 +124,7 @@
   }
 
   @media (min-width: $desktop-width) {
+
     &:nth-of-type(1),
     &:nth-of-type(2) {
       grid-row: 1/2;
@@ -164,16 +166,20 @@
   margin-left: 76px;
 
   &:hover {
-    opacity: 0.6;
-
-    path {
-      fill: $excretion-light;
-      opacity: 1;
-    }
+    color: fade-out($heading-color, .6);
   }
 
   &:active {
     opacity: 0.3;
+  }
+
+  &:hover svg {
+    fill: $excretion-light;
+    opacity: 1;
+  }
+
+  &:active svg {
+    fill: $excretion-light;
   }
 
   @media (min-width: $tablet-width) {
@@ -187,6 +193,8 @@
   left: -50px;
   width: 20px;
   height: 18px;
+  fill: $heading-color;
+  opacity: 0.2;
 
   @media (min-width: $tablet-width) {
     &-search {

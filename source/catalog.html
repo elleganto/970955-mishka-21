@@ -221,7 +221,7 @@
   <footer class="page-footer">
     <div class="footer__wraper container">
       <a class="footer__logo">
-        <svg class="footer__logo-img" width="102" height="34" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg class="footer__logo--img" width="102" height="34" fill="none" xmlns="http://www.w3.org/2000/svg">
           <use xlink:href="img/sprite.svg#logo-footer"></use>
         </svg>
       </a>
@@ -267,31 +267,14 @@
       <h1 class="modal__heading">добавить<br> в корзину</h1>
       <p class="modal__text">Выберите размер:</p>
       <div class="modal__list">
-        <button class="modal__item" >s</button>
-        <button class="modal__item" >m</button>
-        <button class="modal__item" >l</button>
+        <button class="modal__item">s</button>
+        <button class="modal__item">m</button>
+        <button class="modal__item">l</button>
       </div>
       <button class="modal__button" type="submit">добавить</button>
     </div>
   </section>
 
-  <script>
-    var navMain = document.querySelector('.header-navigation');
-    var navToggle = document.querySelector('.header-navigation__toggle');
-
-    navMain.classList.remove('main-nav--nojs');
-
-    navToggle.addEventListener('click', function () {
-      if (navMain.classList.contains('main-nav--closed')) {
-        navMain.classList.remove('main-nav--closed');
-        navMain.classList.add('main-nav--opened');
-      } else {
-        navMain.classList.add('main-nav--closed');
-        navMain.classList.remove('main-nav--opened');
-      }
-    });
-
-  </script>
   <script src="js/script.min.js"></script>
 </body>
 
