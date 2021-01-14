@@ -4,11 +4,16 @@
   color: $text-color;
   position: relative;
   margin-bottom: 40px;
+  padding-top: 29px;
 
   &::before {
-    content: url("../img/zigzag-line.svg");
+    content: "";
     width: 100%;
     height: 6px;
+    position: absolute;
+    top: 15px;
+    left: 0;
+    background-image: url("../img/zigzag-line.svg");
   }
 
   .button {
@@ -21,7 +26,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      margin-top: -116px;
+      margin-top: -113px;
       margin-left: 176px;
       grid-column: 1/2;
     }
@@ -108,11 +113,11 @@
     font-size: 53px;
     line-height: 57px;
     margin-bottom: 10px;
-    margin-top: 15px;
+    margin-top: 18px;
 
     &::after {
-      top: -2%;
-      left: 2%;
+      top: -0.5%;
+      left: 1%;
     }
   }
 }
@@ -151,6 +156,10 @@
 
     div:nth-of-type(1) {
       margin-right: 25px;
+    }
+
+    div:nth-of-type(3) {
+      margin-left: 0;
     }
   }
 }

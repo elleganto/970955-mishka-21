@@ -27,22 +27,20 @@
   svg {
     width: 45px;
     height: 35px;
-
-    path {
-      fill: $excretion-light;
-    }
+    fill: $excretion-light;
   }
 
-  &:hover path {
+  &:hover svg {
     fill: $link-color;
   }
 
-  &:active path {
+  &:active svg {
     fill: $link-color;
     opacity: 0.3;
   }
 
   @media (min-width: $tablet-width) {
-    margin-left: 10px;
+    margin-left: 19px;
+    margin-right: -10px;
   }
 }

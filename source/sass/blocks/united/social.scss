@@ -25,11 +25,15 @@
 }
 
 .social__link {
-  &:hover path {
+  svg {
+    fill: $heading-color;
+  }
+
+  &:hover svg {
     fill: $link-color;
   }
 
-  &:active path {
+  &:active svg {
     fill: $link-color;
     opacity: 0.3;
   }

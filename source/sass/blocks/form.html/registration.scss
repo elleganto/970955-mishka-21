@@ -5,7 +5,7 @@
   position: relative;
 
   input {
-    width: 98%;
+    width: 97%;
     display: block;
     box-shadow: inset 0px -2px 0px $heading-color;
     border: none;
@@ -17,74 +17,83 @@
 
   @media (min-width: $tablet-width) {
     input {
-      width: 70%;
-      display: inline-block;
-      margin-left: 20px;
+      width: 71.1%;
       padding-left: 20px;
-
-      &[name="name"] {
-        width: 80%;
-      }
 
       &::placeholder {
         font-size: 19px;
         line-height: 18px;
       }
     }
-
-    .form__heading {
-      position: absolute;
-    }
   }
 
   @media (min-width: $desktop-width) {
-    input {
-      width: 63%;
-
-      &[name="name"] {
-        width: 69%;
-      }
-    }
-
     .form__heading {
-      left: 110px;
+      left: 111px;
     }
   }
 }
 
 .registration__client {
-  margin-bottom: 30px;
+  margin-bottom: 0;
+
+  &--item {
+    padding-bottom: 22px;
+
+    &:hover input,
+    input:focus {
+      box-shadow: inset 0px -2px 0px $excretion-light;
+      outline: none;
+    }
+  }
+
+  input {
+    padding-bottom: 16px;
+    padding-left: 0;
+  }
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 27px;
     display: flex;
     flex-direction: column;
     margin-top: 48px;
     position: relative;
+
+    &--wrap {
+      padding-left: 168px;
+    }
+
+    &--item {
+      padding-top: 17px;
+
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    input {
+      padding-left: 17px;
+      flex-grow: 1;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--wrap {
+      padding-left: 177px;
+    }
+
+    &--item {
+      width: 80%;
+    }
   }
 }
 
 .registration__heading {
-  margin-top: 20px;
-
-  input {
-    margin-top: 15px;
-    margin-bottom: 19px;
-    padding-bottom: 20px;
-  }
-
-  &:hover input,
-  input:focus {
-    box-shadow: inset 0px -2px 0px $excretion-light;
-    outline: none;
-  }
+  padding-bottom: 20px;
+  display: block;
 
   @media (min-width: $tablet-width) {
     margin-top: 0;
-    margin-left: 167px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-left: 175px;
+    padding-right: 25px;
   }
 }
 
@@ -95,151 +104,141 @@
 }
 
 .registration__adress {
-  position: relative;
-
   .form__heading {
-    padding-top: 14px;
-    position: static;
+    padding-top: 12px;
+    padding-bottom: 21px;
 
-    &:hover input,
-    input:focus {
-      box-shadow: inset 0px -2px 0px $excretion-light;
-      outline: none;
+    &--decorate::after {
+      top: 38%;
     }
+  }
 
-    &:nth-of-type(2) input {
-      margin-bottom: 15px;
-    }
+  &--wrap {
+    padding-bottom: 23px;
+  }
 
-    &--telephone::after {
-      content: "";
-      position: absolute;
-      width: 62%;
-      height: 1px;
-      top: 8px;
-      left: 90px;
-      background-color: $underline-color;
+  &--item {
+    position: relative;
+  }
 
-      @media (min-width: $tablet-width) {
-        display: none;
-      }
-    }
+  &--item:hover svg,
+  &--item:focus svg {
+    fill: $underline-color;
+    opacity: 1;
+  }
 
-    &--telephone::before {
-      content: url("../img/icon__phone.svg");
-      position: absolute;
-      width: 32px;
-      height: 21px;
-      top: 32px;
-      right: 31px;
-    }
+  &--telephone {
+    position: absolute;
+    top: -5px;
+    right: 4%;
+    opacity: 0.2;
+  }
 
-
-    &--e-mail::after {
-      content: "";
-      position: absolute;
-      width: 56%;
-      height: 1px;
-      top: 115px;
-      left: 108px;
-      background-color: $underline-color;
-
-      @media (min-width: $tablet-width) {
-        display: none;
-      }
-    }
-
-    &--e-mail::before {
-      content: url("../img/icon__mail.svg");
-      position: absolute;
-      width: 32px;
-      height: 21px;
-      bottom: 15px;
-      right: 34px;
-    }
+  &--e-mail {
+    position: absolute;
+    bottom: 16px;
+    right: 3%;
+    opacity: 0.2;
   }
 
   input {
-    margin-top: 15px;
-    margin-bottom: 34px;
-    padding-bottom: 20px;
+    padding-bottom: 19px;
+
+    &:hover,
+    &:focus {
+      box-shadow: inset 0px -2px 0px $excretion-light;
+      outline: none;
+    }
   }
 
   @media (min-width: $tablet-width) {
-    padding-top: 47px;
-    padding-bottom: 34px;
+    padding-top: 64px;
+    padding-bottom: 12px;
     display: flex;
     flex-direction: column;
 
-
     .form__heading {
-      position: static;
       padding-bottom: 0;
       padding-top: 0;
-
-      &:nth-of-type(2) input {
-        margin-left: 105px;
-      }
-
-      &--telephone::before {
-        top: 26%;
-        right: 9%;
-      }
-
-      &--e-mail::before {
-        bottom: 29%;
-        right: 9.5%;
-      }
+      padding-right: 89px;
+      position: relative;
     }
 
     input {
-      width: 71.6%;
-      margin-left: 130px;
+      width: 96%;
+      padding-left: 18px;
+      margin-left: 0;
       background-color: inherit;
     }
 
-    label:nth-of-type(2) {
-      margin-top: -15px;
+    &--wrap {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      padding-bottom: 38px;
+    }
+
+    &--item {
+      flex-grow: 1;
+    }
+
+    &--telephone {
+      top: -4px;
+      right: 4.9%;
+    }
+
+    &--e-mail {
+      bottom: 15px;
+      right: 4.4%;
     }
   }
 
   @media (min-width: $desktop-width) {
     input {
-      width: 68.6%;
-      margin-left: 78px;
+      width: 77.7%;
+    }
+
+    &--telephone {
+      top: -6px;
+      right: 21%;
+    }
+
+    &--e-mail {
+      bottom: 13px;
+      right: 20.4%;
     }
 
     .form__heading {
       padding-left: 61px;
+      padding-right: 35px;
+      left: 0;
+    }
+  }
+}
 
-      &:nth-of-type(2) input {
-        margin-left: 53px;
-      }
+.registration__telephone {
+  .form__heading {
+    padding-right: 107px;
 
-      &--telephone::before {
-        top: 57px;
-        right: 226px;
-      }
-
-      &--e-mail::before {
-        bottom: 68px;
-        right: 228px;
-      }
+    @media (min-width: $desktop-width) {
+      padding-right: 53px;
     }
   }
 }
 
 .registration__wishes {
   &--text {
-    width: 241px;
-    height: 123px;
-    margin-bottom: 10px;
-    padding-top: 21px;
+    width: 90%;
+    height: 120px;
+    margin-bottom: 14px;
+    padding-top: 17px;
     padding-left: 16px;
+    font-family: "Open Sans", "Arial", sans-serif;
     font-size: 17px;
     line-height: 18px;
     color: fade-out($heading-color, .3);
     border: 2px solid $text-color;
+    box-sizing: content-box;
 
     &:hover,
     &:focus {
@@ -258,7 +257,12 @@
 
   .form__heading {
     display: block;
-    padding-bottom: 20px;
+    padding-bottom: 23px;
+    padding-top: 10px;
+
+    &--decorate::after {
+      top: 17px;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -268,10 +272,11 @@
     position: relative;
 
     &--text {
-      width: 478px;
+      height: 122px;
       font-size: 19px;
-      margin-left: 170px;
-      margin-bottom: 55px;
+      margin-left: 167px;
+      margin-bottom: 51px;
+      margin-right: 0;
       padding-top: 15px;
       padding-left: 14px;
     }
@@ -284,6 +289,10 @@
       font-size: 17px;
       line-height: 30px;
     }
+
+    .form__heading {
+      padding-top: 19px;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -292,17 +301,20 @@
       height: 124px;
       padding-top: 15px;
       margin-left: 175px;
-      margin-bottom: 49px;
+      margin-bottom: 46px;
     }
 
     &--note {
       margin-left: 169px;
-      margin-top: 15px;
+      margin-top: 13px;
     }
   }
 }
 
 .form__button {
+  font-size: 17px;
+  line-height: 16px;
+
   @media (min-width: $tablet-width) {
     width: 230px;
   }

@@ -36,9 +36,22 @@
   display: contents;
   text-decoration: none;
 
-  &:hover .assortiment__offer {
-    padding-top: 36px;
+  &:hover svg {
+    opacity: 0.7;
+  }
 
+  &:active svg {
+    opacity: 0.3;
+  }
+
+  &:hover .assortiment__offer--interior,
+  &:active .assortiment__offer--interior {
+    background-color: $interior-hover;
+  }
+
+  &:hover .assortiment__offer--toys,
+  &:active .assortiment__offer--toys {
+    background-color: $link-color;
   }
 }
 
@@ -56,22 +69,22 @@
     background-color: $excretion-light;
   }
 
-  &--interior::after {
-    content: url("../img/interior-img.svg");
+  &--interior svg {
     position: absolute;
     top: 23px;
     right: 36px;
+    opacity: 0.5;
   }
 
   &--toys {
     background-color: $excretion-darck;
   }
 
-  &--toys::after {
-    content: url("../img/toy-img.svg");
+  &--toys svg {
     position: absolute;
     top: 21px;
     right: 27px;
+    opacity: 0.5;
   }
 
   @media (min-width: $tablet-width) {
@@ -81,11 +94,11 @@
     font-size: 20px;
     line-height: 30px;
 
-    &--interior::after {
+    &--interior svg {
       top: 29px;
     }
 
-    &--toys::after {
+    &--toys svg {
       top: 32px;
       right: 33px;
     }

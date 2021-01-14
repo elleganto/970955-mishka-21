@@ -7,13 +7,12 @@
 
   @media (min-width: $tablet-width) {
     margin-top: 55px;
-    margin-bottom: 48px;
+    margin-bottom: 50px;
     font-size: 19px;
     line-height: 18px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 50px;
     margin-top: 52px;
   }
 }
@@ -30,21 +29,48 @@
   &--decorate::after {
     content: "";
     position: absolute;
-    width: 77%;
+    width: 98%;
     height: 1px;
     top: 25px;
-    left: 60px;
+    left: 0;
     background-color: $underline-color;
+    z-index: -1;
+  }
 
-    @media (min-width: $tablet-width) {
-      display: none;
-    }
+  &--text {
+    background-color: $main-background;
+    padding-right: 20px;
+    z-index: 1;
+  }
+
+  &--type {
+    padding-right: 23px;
+  }
+
+  &--colors {
+    padding-right: 16px;
+  }
+
+  &--client {
+    padding-right: 18px;
+  }
+
+  &--telephone {
+    padding-right: 28px;
   }
 
   @media (min-width: $tablet-width) {
     font-size: 17px;
     line-height: 16px;
     position: absolute;
+
+    &--decorate::after {
+      display: none;
+    }
+
+    &--text {
+      background-color: inherit;
+    }
   }
 }
 
@@ -56,13 +82,11 @@ input::placeholder {
 }
 
 .form__type {
-  padding: 0;
+  margin: 0 auto;
   border: none;
-  margin: 0;
-  position: relative;
 
   &--wrap {
-    margin-left: 61px;
+    margin-left: 60px;
     display: flex;
     flex-direction: column;
   }
@@ -81,6 +105,8 @@ input::placeholder {
   }
 
   @media (min-width: $tablet-width) {
+    position: relative;
+
     &--wrap {
       padding-bottom: 30px;
     }
@@ -193,9 +219,7 @@ input::placeholder {
 }
 
 .form__colors {
-  padding: 0;
   border: none;
-  margin: 0;
   position: relative;
   margin-top: 25px;
 
@@ -356,14 +380,14 @@ input::placeholder {
 }
 
 @media (min-width: $desktop-width) {
-  .filter-input-checkbox:checked+label[for="grey"]::after,
-  .filter-input-checkbox:checked+label[for="pink"]::after {
+  .filter-input-checkbox:checked + label[for="grey"]::after,
+  .filter-input-checkbox:checked + label[for="pink"]::after {
     top: -5px;
     left: -66px;
   }
 
-  .filter-input-checkbox:checked+label[for="tiffani"]::after,
-  .filter-input-checkbox:checked+label[for="orange"]::after {
+  .filter-input-checkbox:checked + label[for="tiffani"]::after,
+  .filter-input-checkbox:checked + label[for="orange"]::after {
     top: -5px;
     left: -71px;
   }
