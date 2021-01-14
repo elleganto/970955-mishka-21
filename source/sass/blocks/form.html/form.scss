@@ -147,7 +147,7 @@ input::placeholder {
   }
 }
 
-.filter-input-radio+label::before {
+.filter-input-radio + label::before {
   content: "";
   position: absolute;
   left: -61px;
@@ -169,7 +169,7 @@ input::placeholder {
   }
 }
 
-.filter-input-radio:checked+label::after {
+.filter-input-radio:checked + label::after {
   content: "";
   position: absolute;
   top: 33px;
@@ -191,7 +191,7 @@ input::placeholder {
   }
 }
 
-.filter-input-radio:checked+label:nth-of-type(2)::after {
+.filter-input-radio:checked + label:nth-of-type(2)::after {
   top: 26px;
   left: -49px;
 
@@ -339,7 +339,7 @@ input::placeholder {
   }
 }
 
-.filter-input-checkbox+label::before {
+.filter-input-checkbox + label::before {
   content: "";
   position: absolute;
   left: -61px;
@@ -356,7 +356,7 @@ input::placeholder {
   }
 }
 
-.filter-input-checkbox:checked+label::after {
+.filter-input-checkbox:checked + label::after {
   content: url("../img/tick.svg");
   position: absolute;
   top: 25px;
@@ -377,15 +377,14 @@ input::placeholder {
 }
 
 @media (min-width: $desktop-width) {
-
-  .filter-input-checkbox:checked+label[for="grey"]::after,
-  .filter-input-checkbox:checked+label[for="pink"]::after {
+  .filter-input-checkbox:checked + label[for="grey"]::after,
+  .filter-input-checkbox:checked + label[for="pink"]::after {
     top: -5px;
     left: -66px;
   }
 
-  .filter-input-checkbox:checked+label[for="tiffani"]::after,
-  .filter-input-checkbox:checked+label[for="orange"]::after {
+  .filter-input-checkbox:checked + label[for="tiffani"]::after,
+  .filter-input-checkbox:checked + label[for="orange"]::after {
     top: -5px;
     left: -71px;
   }

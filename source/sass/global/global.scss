@@ -56,7 +56,7 @@ img {
   }
 
   &:active {
-    color: fade-out($main-background, .3)
+    color: fade-out($main-background, .3);
   }
 }
 

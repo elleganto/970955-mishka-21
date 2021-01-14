@@ -42,7 +42,7 @@
       }
 
       &[name="celebrated"] {
-        margin-left: 23x;
+        margin-left: 23px;
       }
     }
 
@@ -64,8 +64,6 @@
   }
 }
 
-
-
 // .orient {
 //   width: 100%;
 
@@ -75,9 +73,6 @@
 //     padding-left: 167px;
 //   }
 // }
-
-
-
 
 .registration__heading {
   margin-top: 20px;
@@ -131,11 +126,6 @@
     &--decorate::after {
       top: 38%;
     }
-
-    // &--decorate:nth-of-type(2):after {
-    //   width: 69.5%;
-    //   left: 77px;
-    // }
   }
 
   &--wrap:hover svg,
@@ -213,7 +203,6 @@
       bottom: 66px;
       right: 9.4%;
     }
-
   }
 
   @media (min-width: $desktop-width) {
