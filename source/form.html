@@ -136,46 +136,72 @@
             <div class="form__heading form__heading--decorate">
               <span class="form__heading--text form__heading--client">фио</span>
             </div>
-            <!-- <div class="orient"> -->
-            <label class="registration__heading" for="name">
-              Имя:
-              <input type="text" name="name" id="name" required placeholder="Введите ваше имя*">
-            </label>
-            <label class="registration__heading" for="surname">
-              Фамилия:
-              <input type="text" name="surname" id="surname" required placeholder="Укажите фамилию*">
-            </label>
-            <label class="registration__heading" for="celebrated">
-              Отчество:
-              <input type="text" name="celebrated" id="celebrated" required placeholder="Отчество, если желаете">
-            </label>
-            <!-- </div> -->
+
+            <div class="registration__client--wrap">
+              <div class="registration__client--item">
+                <label class="registration__heading" for="name">
+                  Имя:
+                </label>
+                <input type="text" name="name" id="name" required placeholder="Введите ваше имя*">
+              </div>
+
+              <div class="registration__client--item">
+                <label class="registration__heading" for="surname">
+                  Фамилия:
+                </label>
+                <input type="text" name="surname" id="surname" required placeholder="Укажите фамилию*">
+              </div>
+
+              <div class="registration__client--item">
+                <label class="registration__heading" for="celebrated">
+                  Отчество:
+                </label>
+                <input type="text" name="celebrated" id="celebrated" required placeholder="Отчество, если желаете">
+              </div>
+
+            </div>
           </div>
+
           <div class="registration--background">
             <div class="registration__adress container">
-              <div class="form__heading form__heading--decorate">
-                <span class="form__heading--text form__heading--telephone">тел</span>
+              <div class="registration__adress--wrap registration__telephone">
+                <div class="form__heading form__heading--decorate">
+                  <span class="form__heading--text form__heading--telephone">
+                    тел
+                  </span>
+                </div>
+                <div class="registration__adress--item">
+                  <label for="telephone">
+                    <input type="tel" name="telephone" id="telephone" required placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+                  </label>
+                  <svg class="registration__adress--telephone" width="25" height="24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href="img/sprite.svg#icon__phone"></use>
+                  </svg>
+                </div>
               </div>
-              <label class="registration__adress--wrap " for="telephone">
-                <input type="tel" name="telephone" id="telephone" required placeholder="+7 ХХХ ХХХ ХХ ХХ*">
-                <svg class="registration__adress--telephone" width="25" height="24" xmlns="http://www.w3.org/2000/svg">
-                  <use xlink:href="img/sprite.svg#icon__phone"></use>
-                </svg>
-              </label>
-              <div class="form__heading form__heading--decorate">
-                <span class="form__heading--text form__heading--e-mail">e-mail</span>
+              <div class="registration__adress--wrap registration__e-mail">
+                <div class="form__heading form__heading--decorate">
+                  <span class="form__heading--text form__heading--e-mail">
+                    e-mail
+                  </span>
+                </div>
+                <div class="registration__adress--item">
+                  <label for="e-mail">
+                    <input type="email" name="e-mail" id="e-mail" required placeholder="Ваш Email*">
+                  </label>
+                  <svg class="registration__adress--e-mail" width="32" height="21" xmlns="http://www.w3.org/2000/svg">
+                    <use xlink:href="img/sprite.svg#icon__mail"></use>
+                  </svg>
+                </div>
               </div>
-              <label class="registration__adress--wrap" for="e-mail">
-                <input type="email" name="e-mail" id="e-mail" required placeholder="Ваш Email*">
-                <svg class="registration__adress--e-mail" width="32" height="21" xmlns="http://www.w3.org/2000/svg">
-                  <use xlink:href="img/sprite.svg#icon__mail"></use>
-                </svg>
-              </label>
             </div>
           </div>
           <div class="registration__wishes container">
             <label class="form__heading form__heading--decorate" for="description">
-              <span class="probs probs--additionally">доп</span>
+              <span class="form__heading--text form__heading--additionally">
+                доп
+              </span>
             </label>
             <textarea class="registration__wishes--text" name="description" id="description" cols="30" rows="10">Опишите все ваши пожелания к заказу
             </textarea>
