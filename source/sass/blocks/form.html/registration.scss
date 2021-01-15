@@ -123,7 +123,7 @@
   }
 
   &--item:hover svg,
-  &--item:focus svg {
+  input:focus + svg {
     fill: $underline-color;
     opacity: 1;
   }
