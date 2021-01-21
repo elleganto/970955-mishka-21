@@ -93,11 +93,19 @@ input::placeholder {
 
   &--radio {
     padding-top: 24px;
-
     position: relative;
     display: block;
     cursor: pointer;
     user-select: none;
+
+    &:hover::before {
+      border-color: $excretion-light;
+    }
+
+    &:active::before {
+      border-color: $heading-color;
+      opacity: 0.3;
+    }
 
     &:nth-of-type(2)::before {
       top: 14px;
@@ -122,15 +130,6 @@ input::placeholder {
       br {
         display: none;
       }
-
-      &:hover::before {
-        border-color: $excretion-light;
-      }
-
-      &:active::before {
-        border-color: $heading-color;
-        opacity: 0.3;
-      }
     }
 
     .form__heading {
@@ -148,6 +147,11 @@ input::placeholder {
       left: 110px;
     }
   }
+}
+
+.filter-input-radio:focus + label::before,
+.filter-input-checkbox:focus + label::before {
+  border-color: $excretion-light;
 }
 
 .filter-input-radio + label::before {
@@ -380,6 +384,7 @@ input::placeholder {
 }
 
 @media (min-width: $desktop-width) {
+
   .filter-input-checkbox:checked + label[for="grey"]::after,
   .filter-input-checkbox:checked + label[for="pink"]::after {
     top: -5px;

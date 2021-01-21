@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="utf-8">
@@ -10,9 +10,9 @@
 </head>
 
 <body class="page__body">
-  <header class="page-header">
+  <header class="header">
     <div class="header__wrapper">
-      <a class="header__logo">
+      <a href="index.html" class="header__logo">
         <picture>
           <source media="(min-width: 1150px)" srcset="img/mishka-logo-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/mishka-logo-tablet.svg">
@@ -71,10 +71,14 @@
     </div>
   </header>
 
-  <main class="page-main">
+  <main class="main">
     <div class="main__wrapper">
       <div class="main__heading--wrap-catalog">
-        <h1 class="main__heading">Каталог товаров</h1>
+        <div class="main__heading--wrap">
+          <h1 class="main__heading">
+            Каталог товаров
+          </h1>
+        </div>
       </div>
       <section class="product container">
         <ul class="product__list">
@@ -106,11 +110,12 @@
                 </div>
                 <div class="product__wrap--order">
                   <strong class="product__price">1 200 руб.</strong>
-                  <button class="product__button order-product">
+                  <a class="product__button order-product" href="#">
                     <svg class="product__button--icon" width="21" height="18" xmlns="http://www.w3.org/2000/svg">
                       <use xlink:href="img/sprite.svg#icon_cart"></use>
                     </svg>
-                  </button>
+                    <span>добавить товар в корзину</span>
+                  </a>
                 </div>
               </div>
             </article>
@@ -143,11 +148,12 @@
                 </div>
                 <div class="product__wrap--order">
                   <strong class="product__price">690 руб.</strong>
-                  <button class="product__button order-product">
+                  <a class="product__button order-product" href="#">
                     <svg width="21" height="18" class="product__button--icon">
                       <use xlink:href="img/sprite.svg#icon_cart"></use>
                     </svg>
-                  </button>
+                    <span>добавить товар в корзину</span>
+                  </a>
                 </div>
               </div>
             </article>
@@ -180,11 +186,12 @@
                 </div>
                 <div class="product__wrap--order">
                   <strong class="product__price">1 500 руб.</strong>
-                  <button class="product__button order-product">
+                  <a class="product__button order-product" href="#">
                     <svg class="product__button--icon" width="21" height="18">
                       <use xlink:href="img/sprite.svg#icon_cart"></use>
                     </svg>
-                  </button>
+                    <span>добавить товар в корзину</span>
+                  </a>
                 </div>
               </div>
             </article>
@@ -219,14 +226,14 @@
     </div>
   </main>
 
-  <footer class="page-footer">
+  <footer class="footer">
     <div class="footer__wraper container">
       <a class="footer__logo">
         <svg class="footer__logo--img" width="102" height="34" fill="none" xmlns="http://www.w3.org/2000/svg">
           <use xlink:href="img/sprite.svg#logo-footer"></use>
         </svg>
       </a>
-      <section class="footer__social">
+      <section class="social">
         <h2 class="visually-hidden">Мы в соцсетях</h2>
         <ul class="social__list">
           <li class="social__item">
@@ -234,13 +241,15 @@
               <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <use xlink:href="img/sprite.svg#social_insta"></use>
               </svg>
+              <span>логотип инстаграм</span>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--Facebook" href="https://www.facebook.com/htmlacademy">
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
               <svg width="15" height="28" viewBox="0 0 15 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <use xlink:href="img/sprite.svg#social_fb"></use>
               </svg>
+              <span>логотип фэйсбук</span>
             </a>
           </li>
           <li class="social__item">
@@ -248,16 +257,18 @@
               <svg width="23" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <use xlink:href="img/sprite.svg#social_twitter"></use>
               </svg>
+              <span>логотип твиттер</span>
             </a>
           </li>
         </ul>
       </section>
-      <section class="footer__copyright">
+      <section class="copyright">
         <h2 class="copyright__heading">Разработано</h2>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
+          <svg width="27" height="34" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
             <use xlink:href="img/sprite.svg#htmlacademy"></use>
           </svg>
+          <span>логотип HTML академии</span>
         </a>
       </section>
     </div>
@@ -265,7 +276,7 @@
 
   <section class="modal">
     <div class="modal--wrap">
-      <h1 class="modal__heading">добавить<br> в корзину</h1>
+      <h2 class="modal__heading">добавить<br> в корзину</h2>
       <p class="modal__text">Выберите размер:</p>
       <div class="modal__list">
         <button class="modal__item">s</button>

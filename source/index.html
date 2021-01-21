@@ -1,8 +1,7 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
-
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Мишка</title>
@@ -11,10 +10,9 @@
 </head>
 
 <body class="page__body">
-
-  <header class="page-header">
+  <header class="header">
     <div class="header__wrapper">
-      <a class="header__logo">
+      <a href="#" class="header__logo">
         <picture>
           <source media="(min-width: 1150px)" srcset="img/mishka-logo-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/mishka-logo-tablet.svg">
@@ -73,7 +71,7 @@
     </div>
   </header>
 
-  <main class="page-main">
+  <main class="main">
     <div class="main__heading--wrap-index">
       <div class="main__heading--wrap container">
         <h1 class="main__heading">
@@ -84,7 +82,7 @@
     <div class="main__wrapper">
       <section class="assortiment">
         <h2 class="visually-hidden">Ассотримент</h2>
-        <a href="#" class="assortiment__link">
+        <a href="#" class="assortiment__link" tabindex="1">
           <p class="assortiment__offer assortiment__offer--interior">
             Предметы<br> интерьера
             <svg width="41" height="62" viewBox="0 0 40 62" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -92,8 +90,8 @@
             </svg>
           </p>
         </a>
-        <a href=# class="assortiment__link">
-          <p class="assortiment__offer assortiment__offer--toys">
+        <a href=# class="assortiment__link" tabindex="2">
+          <p  class="assortiment__offer assortiment__offer--toys">
             Детские<br> игрушки
             <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
               <use xlink:href="img/sprite.svg#toy-img"></use>
@@ -146,8 +144,8 @@
 
       <section class="advantages container">
         <h2 class="advantages__heading">Коротко о нас:</h2>
-        <ul class="advantages__list">
-          <div class="advantages__list--wrap-left">
+        <div class="advantages__list">
+          <ul class="advantages__list--wrap advantages__list--wrap-left">
             <li class="advantages__item">
               <svg class="advantages__item--ecologi" width="33" height="38" viewBox="0 0 33 38" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
@@ -169,8 +167,8 @@
               </svg>
               Увеличивает лайки<br> на фотографиях
             </li>
-          </div>
-          <div class="advantages__list--wrap">
+          </ul>
+          <ul class="advantages__list--wrap advantages__list--wrap-right">
             <li class="advantages__item">
               <svg class="advantages__item--handmade" width="35" height="34" viewBox="0 0 35 34" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
@@ -192,8 +190,8 @@
               </svg>
               Поставляется<br> в подарочной упаковке
             </li>
-          </div>
-        </ul>
+          </ul>
+        </div>
       </section>
 
       <section class="reviews">
@@ -239,8 +237,8 @@
             <div>e-mail:</div>
             <a class="contacts__link" href="info@mimimishkashop.ru">info@mimimishkashop.ru</a>
             <div>адрес:</div>
-            <div>г. Санкт-Петербург</br>
-              ул. Большая Конюшенная</br>
+            <div>г. Санкт-Петербург<br>
+              ул. Большая Конюшенная<br>
               д. 19/8, офис 101
             </div>
           </div>
@@ -257,14 +255,14 @@
     </div>
   </main>
 
-  <footer class="page-footer">
+  <footer class="footer">
     <div class="footer__wraper container">
       <a class="footer__logo">
         <svg class="footer__logo--img" width="102" height="34" fill="none" xmlns="http://www.w3.org/2000/svg">
           <use xlink:href="img/sprite.svg#logo-footer"></use>
         </svg>
       </a>
-      <section class="footer__social">
+      <section class="social">
         <h2 class="visually-hidden">Мы в соцсетях</h2>
         <ul class="social__list">
           <li class="social__item">
@@ -272,13 +270,15 @@
               <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <use xlink:href="img/sprite.svg#social_insta"></use>
               </svg>
+              <span>логотип инстаграм</span>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--Facebook" href="https://www.facebook.com/htmlacademy">
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
               <svg width="15" height="28" viewBox="0 0 15 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <use xlink:href="img/sprite.svg#social_fb"></use>
               </svg>
+              <span>логотип фэйсбук</span>
             </a>
           </li>
           <li class="social__item">
@@ -286,16 +286,18 @@
               <svg width="23" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <use xlink:href="img/sprite.svg#social_twitter"></use>
               </svg>
+              <span>логотип твиттер</span>
             </a>
           </li>
         </ul>
       </section>
-      <section class="footer__copyright">
+      <section class="copyright">
         <h2 class="copyright__heading">Разработано</h2>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <svg width="27" height="34" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
             <use xlink:href="img/sprite.svg#htmlacademy"></use>
           </svg>
+          <span>логотип HTML академии</span>
         </a>
       </section>
     </div>
@@ -303,7 +305,7 @@
 
   <section class="modal">
     <div class="modal--wrap">
-      <h1 class="modal__heading">добавить<br> в корзину</h1>
+      <h2 class="modal__heading">добавить<br> в корзину</h2>
       <p class="modal__text">Выберите размер:</p>
       <div class="modal__list">
         <button class="modal__item">s</button>

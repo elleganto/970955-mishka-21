@@ -61,15 +61,35 @@
   }
 }
 
+// Display without JS
 @media (max-width: $mobile-width-only) {
   .main-nav--closed .header-navigation__item {
     display: none;
   }
+
+  .main-nav--nojs .header-navigation__toggle {
+    display: none;
+  }
+
+  .main-nav--nojs .header-navigation__list {
+    position: static;
+    min-height: 0;
+  }
+
+  .main-nav--nojs .header-navigation__item {
+    display: flex;
+    align-items: center;
+
+    a {
+      margin-left: 76px;
+    }
+  }
+
+  .main-nav--nojs .header-navigation__item--decktop {
+    display: none;
+  }
 }
 
-.main-nav--nojs .header-navigation__toggle {
-  display: none;
-}
 
 .header-navigation__list {
   position: relative;

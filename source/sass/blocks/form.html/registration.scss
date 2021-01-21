@@ -245,6 +245,7 @@
     color: fade-out($heading-color, .3);
     border: 2px solid $text-color;
     box-sizing: content-box;
+    resize: none;
 
     &:hover,
     &:focus {

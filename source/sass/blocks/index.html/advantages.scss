@@ -57,9 +57,11 @@
 }
 
 .advantages__list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  &--wrap {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
 
   @media (min-width: $tablet-width) {
     display: grid;
@@ -120,5 +122,9 @@
     font-size: 20px;
     line-height: 22px;
     margin-bottom: 55px;
+
+    &:nth-of-type(even) {
+      grid-column: 1/2;
+    }
   }
 }

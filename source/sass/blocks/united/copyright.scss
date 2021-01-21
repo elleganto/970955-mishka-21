@@ -1,4 +1,4 @@
-.footer__copyright {
+.copyright {
   display: flex;
   margin: 0 auto;
   margin-bottom: 15px;
@@ -28,6 +28,11 @@
     width: 45px;
     height: 35px;
     fill: $excretion-light;
+  }
+
+  span {
+    position: absolute;
+    opacity: 0;
   }
 
   &:hover svg {

@@ -160,6 +160,10 @@
       opacity: 0.3;
     }
 
+    &:focus svg {
+      outline: 2px solid $heading-color;
+    }
+
     @media (min-width: $tablet-width) {
       border: none;
       width: 50px;
