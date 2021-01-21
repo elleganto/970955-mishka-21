@@ -197,6 +197,16 @@
 .contacts__map {
   margin-top: 60px;
   margin-bottom: 34px;
+  background-image: url("../img/map__mobile.jpg");
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-color: inherit;
+  background-size: auto;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/map__mobile@2.jpg");
+    background-size: auto;
+  }
 
   iframe {
     width: 100%;
@@ -204,6 +214,11 @@
 
   @media (min-width: $tablet-width) {
     margin-top: 50px;
+    background-image: url("../img/map__tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/map__tablet@2.jpg");
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -213,5 +228,10 @@
     padding-top: 20px;
     grid-column: 2/3;
     grid-row: 1/-1;
+    background-image: url("../img/map__desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/map__desktop@2.jpg");
+    }
   }
 }

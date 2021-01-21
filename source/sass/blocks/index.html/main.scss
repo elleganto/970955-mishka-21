@@ -1,4 +1,4 @@
-.page-main {
+.main {
   width: 100%;
 }
 
@@ -13,12 +13,18 @@
   &--wrap {
     width: 100%;
     display: flex;
+
+    padding-bottom: 122px;
   }
 
   @media (min-width: $tablet-width) {
     font-size: 43px;
     line-height: 50px;
     margin-top: 152px;
+
+    &--wrap {
+      padding-bottom: 371px;
+    }
 
     &--gap {
       display: none;
@@ -29,12 +35,15 @@
     width: 70%;
     font-size: 53px;
     line-height: 57px;
+
+    &--wrap {
+      padding-bottom: 358px;
+    }
   }
 }
 
 .main__heading--wrap-index {
   min-width: 320px;
-  height: 283px;
   display: flex;
   background-image: url("../img/mobile__background.jpg");
   background-position: 50% -17px;
@@ -48,7 +57,6 @@
 
   @media (min-width: $tablet-width) {
     min-width: 768px;
-    height: 624px;
     border-top: 1px solid fade-out($heading-color, .9);
     background-image: url("../img/tablet__background.jpg");
     background-position: 50% -3px;
