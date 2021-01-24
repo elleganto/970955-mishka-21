@@ -384,7 +384,6 @@ input::placeholder {
 }
 
 @media (min-width: $desktop-width) {
-
   .filter-input-checkbox:checked + label[for="grey"]::after,
   .filter-input-checkbox:checked + label[for="pink"]::after {
     top: -5px;

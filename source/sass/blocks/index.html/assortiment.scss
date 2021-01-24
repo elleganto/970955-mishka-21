@@ -42,9 +42,6 @@
 
   &:hover svg {
     opacity: 0.7;
-  }
-
-  &:hover svg {
     top: 24px;
   }
 
@@ -52,6 +49,7 @@
   &:hover .assortiment__offer--toys {
     padding-bottom: 41px;
     padding-top: 19px;
+    margin-top: -5px;
   }
 
   &:active svg {

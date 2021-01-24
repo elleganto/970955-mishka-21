@@ -3,15 +3,15 @@
 const navMain = document.querySelector('.header-navigation');
 const navToggle = document.querySelector('.header-navigation__toggle');
 
-navMain.classList.remove('main-nav--nojs');
+navMain.classList.remove('header-navigation--nojs');
 
 navToggle.addEventListener('click', function () {
-  if (navMain.classList.contains('main-nav--closed')) {
-    navMain.classList.remove('main-nav--closed');
-    navMain.classList.add('main-nav--opened');
+  if (navMain.classList.contains('header-navigation--closed')) {
+    navMain.classList.remove('header-navigation--closed');
+    navMain.classList.add('header-navigation--opened');
   } else {
-    navMain.classList.add('main-nav--closed');
-    navMain.classList.remove('main-nav--opened');
+    navMain.classList.add('header-navigation--closed');
+    navMain.classList.remove('header-navigation--opened');
   }
 });
 
